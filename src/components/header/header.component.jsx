@@ -1,24 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import Button from '../button/button.component';
+
 import './header.styles.scss';
 
 const Header = () => (
-  <div className='header'>
-    <Link className='logo-container' to='/'>
+  <div className="header">
+    <Link className="logo-container" to="/">
       Logo
     </Link>
-    <div className='options'>
-      <Link className='option' to='/about'>
-        <span className='code'>01.</span> About
+    <div className="options">
+      <Link className="option" to="/about">
+        <span className="code">01.</span>
+        <span className="text">About</span>
       </Link>
-      <Link className='option' to='/projects'>
-        <span className='code'>02.</span> Projects
+      <Link className="option" to="/projects">
+        <span className="code">02.</span>
+        <span className="text">Projects</span>
       </Link>
-      <Link className='option' to='/contact'>
-        <span className='code'>03.</span> Contact
+      <Link className="option" to="/contact">
+        <span className="code">03.</span>
+        <span className="text">Contact</span>
       </Link>
-      <button className='button'>Resume</button>
+      <Button small>Resume</Button>
     </div>
   </div>
 );

@@ -13,25 +13,17 @@
     align-items: center;
 
     .option {
-      margin: 0 20px 0;
+      margin: 10px;
 
       .code {
         color: $color-secondary;
         font-family: $font-secondary;
       }
-    }
 
-    .button {
-      cursor: pointer;
-      outline: none;
-      margin-left: 20px;
-      padding: 12px 16px;
-      color: $color-secondary;
-      font-family: $font-secondary;
-      font-size: 1em;
-      background-color: rgba(0, 0, 0, 0);
-      border: 1px solid $color-secondary;
-      border-radius: 5px;
+      .text {
+        margin: 10px;
+        transition: 0.25s;
+      }
     }
   }
 }

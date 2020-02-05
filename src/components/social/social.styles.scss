@@ -1,0 +1,16 @@
+@import '../../styles/_colors.scss';
+@import '../../styles/_fonts.scss';
+
+.social {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 50px;
+
+  .icon {
+    cursor: pointer;
+    margin: 15px 0;
+    transition: 0.25s;
+    align-self: center;
+  }
+}
