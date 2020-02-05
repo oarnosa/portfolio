@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Code|Montserrat&display=swap');
+
+// colors
+$color-background: rgba(43, 48, 59, 1);
+$color-primary: rgba(239, 241, 245, 1);
+$color-secondary: rgba(191, 97, 106, 1);
+$color-tertiary: rgba(208, 135, 112, 1);
+
+// fonts
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Fira Code', monospace;
+
+// gloabl styles
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: $color-primary;
+  font-family: $font-primary;
+
+  body {
+    margin: 50px;
+    background-color: $color-background;
+  }
+}
