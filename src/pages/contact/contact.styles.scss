@@ -1,0 +1,31 @@
+@import '../../assets/styles/_colors.scss';
+@import '../../assets/styles/fonts';
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  .section {
+    font-size: 1.1em;
+    font-family: $font-secondary;
+    color: $color-secondary;
+  }
+
+  .title {
+    padding: 20px 0 25px;
+    font-weight: 700;
+    font-size: 2.8em;
+  }
+
+  .text {
+    opacity: 0.75;
+    padding-bottom: 45px;
+    max-width: 750px;
+    font-size: 1.1em;
+    line-height: 1.3;
+  }
+}

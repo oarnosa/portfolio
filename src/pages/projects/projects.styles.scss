@@ -1,0 +1,18 @@
+@import '../../assets/styles/_colors.scss';
+@import '../../assets/styles/fonts';
+
+.projects-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  .section {
+    padding-bottom: 20px;
+    font-size: 1.1em;
+    font-family: $font-secondary;
+    color: $color-secondary;
+  }
+}

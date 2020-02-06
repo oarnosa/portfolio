@@ -2,6 +2,8 @@
 @import '../../assets/styles/_fonts.scss';
 
 .button {
+  max-height: 65px;
+  max-width: 145px;
   cursor: pointer;
   outline: none;
   padding: 20px 28px;

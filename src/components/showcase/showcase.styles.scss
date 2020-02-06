@@ -1,0 +1,47 @@
+@import '../../assets/styles/_colors.scss';
+@import '../../assets/styles/_fonts.scss';
+
+.showcase {
+  height: 100%;
+  width: 85%;
+  padding: 20px;
+  display: flex;
+
+  .showcase-image {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $color-secondary;
+  }
+
+  .showcase-info {
+    padding: 15px;
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: fit-content;
+
+    .description {
+      text-align: start;
+      opacity: 0.75;
+    }
+
+    .skills {
+      .skill {
+        font-size: 0.85em;
+        font-family: $font-secondary;
+        color: $color-secondary;
+      }
+    }
+
+    .links {
+      .link {
+        margin-right: 10px;
+      }
+    }
+  }
+}
