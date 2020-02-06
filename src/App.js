@@ -20,10 +20,12 @@ const App = () => (
   <Router>
     <Header />
     <Switch>
-      <Route path="/" exact component={HomePage} />
-      <Route path="/about" component={AboutPage} />
-      <Route path="/projects" component={ProjectsPage} />
-      <Route path="/contact" component={ContactPage} />
+      <div className='container'>
+        <Route path='/' exact component={HomePage} />
+        <Route path='/about' component={AboutPage} />
+        <Route path='/projects' component={ProjectsPage} />
+        <Route path='/contact' component={ContactPage} />
+      </div>
     </Switch>
     <Social />
   </Router>

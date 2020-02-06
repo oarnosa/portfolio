@@ -3,7 +3,7 @@ import React from 'react';
 import './projects.styles.scss';
 
 const ProjectsPage = () => (
-  <div>
+  <div className='projects-page'>
     <h1>PROJECTS PAGE</h1>
   </div>
 );

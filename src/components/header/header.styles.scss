@@ -1,12 +1,21 @@
-@import '../../styles/_colors.scss';
-@import '../../styles/_fonts.scss';
+@import '../../assets/styles/_colors.scss';
+@import '../../assets/styles/_fonts.scss';
 
 .header {
   display: flex;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  padding: 0 50px;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
   font-size: 0.85em;
+
+  .logo-container {
+    height: 50px;
+    width: 50px;
+  }
 
   .options {
     display: flex;
@@ -14,15 +23,11 @@
 
     .option {
       margin: 10px;
+      font-family: $font-secondary;
 
       .code {
         color: $color-secondary;
         font-family: $font-secondary;
-      }
-
-      .text {
-        margin: 10px;
-        transition: 0.25s;
       }
     }
   }
