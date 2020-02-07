@@ -4,7 +4,8 @@ import './about.styles.scss';
 
 const AboutPage = () => (
   <div className='about-page'>
-    <h1>ABOUT PAGE</h1>
+    <p className='tagline'>01. Who Am I?</p>
+    <h1 className='heading'>About Me</h1>
   </div>
 );
 

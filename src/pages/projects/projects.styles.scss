@@ -9,10 +9,13 @@
   align-items: center;
   justify-content: center;
 
-  .section {
-    padding-bottom: 20px;
-    font-size: 1.1em;
+  .tagline {
     font-family: $font-secondary;
     color: $color-secondary;
+  }
+
+  .heading {
+    padding: 15px 0 25px;
+    font-weight: 700;
   }
 }

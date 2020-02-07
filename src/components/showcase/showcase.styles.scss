@@ -3,44 +3,87 @@
 
 .showcase {
   height: 100%;
-  width: 85%;
-  padding: 20px;
+  width: 900px;
+  padding: 25px 0;
   display: flex;
 
   .showcase-image {
+    order: 1;
     height: 100%;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    min-width: 40%;
     border: 1px solid $color-secondary;
+    background-repeat: no-repeat;
   }
 
   .showcase-info {
-    padding: 15px;
+    order: 2;
+    padding-left: 25px;
     display: flex;
-    width: fit-content;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
-    width: fit-content;
+
+    .title {
+      display: flex;
+      justify-content: flex-start;
+    }
 
     .description {
-      text-align: start;
+      text-align: justify;
+      line-height: 1.3;
       opacity: 0.75;
     }
 
     .skills {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+
       .skill {
-        font-size: 0.85em;
+        margin-left: 10px;
+        font-size: 0.9em;
         font-family: $font-secondary;
         color: $color-secondary;
       }
     }
 
     .links {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+
       .link {
-        margin-right: 10px;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  &.inverted {
+    .showcase-image {
+      order: 2;
+    }
+
+    .showcase-info {
+      order: 1;
+      align-items: flex-end;
+      padding-right: 25px;
+      padding-left: 0;
+
+      .skills {
+        justify-content: flex-start;
+
+        .skill {
+          margin-left: 0;
+          margin-right: 10px;
+        }
+      }
+
+      .links {
+        justify-content: flex-start;
+
+        .link {
+          margin-left: 0;
+          margin-right: 20px;
+        }
       }
     }
   }

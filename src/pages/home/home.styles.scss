@@ -1,0 +1,21 @@
+@import '../../assets/styles/_colors.scss';
+@import '../../assets/styles/fonts';
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  .tagline {
+    font-family: $font-secondary;
+    color: $color-secondary;
+  }
+
+  .heading {
+    padding: 15px 0 45px;
+    font-weight: 700;
+  }
+}
