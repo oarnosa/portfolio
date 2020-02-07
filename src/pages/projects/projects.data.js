@@ -21,17 +21,6 @@ const PROJECTS_DATA = [
     serverUrl: 'https://oarnosa-chatter-server.herokuapp.com',
     previewUrl: 'https://oarnosa-chatter.herokuapp.com'
   }
-  // {
-  //   id: 3,
-  //   title: 'CampSite',
-  //   description:
-  //     'A RESTful web app which allows users share and find camping sites around the world.',
-  //   imageUrl: 'https://i.ibb.co/Lpn5bjn/CampSite.png',
-  //   skills: ['Node', 'Express', 'MongoDB', 'REST'],
-  //   githubUrl: 'https://github.com/oarnosa/campsite',
-  //   serverUrl: '',
-  //   previewUrl: 'https://oarnosa-campsite.herokuapp.com'
-  // }
 ];
 
 export default PROJECTS_DATA;
