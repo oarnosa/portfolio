@@ -21,7 +21,9 @@ const Header = () => (
       <Link className='option' to='/contact'>
         <span className='code'>03.</span>Contact
       </Link>
-      <Button small>Resume</Button>
+      <Button small style={{ marginLeft: '10px' }}>
+        Resume
+      </Button>
     </div>
   </div>
 );
