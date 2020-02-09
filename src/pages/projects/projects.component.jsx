@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Showcase from '../../components/showcase/showcase.component';
+import Button from '../../components/button/button.component';
 
 import PROJECT_DATA from './projects.data';
 
@@ -10,18 +12,80 @@ class ProjectsPage extends Component {
   constructor() {
     super();
     this.state = {
-      projects: PROJECT_DATA
+      projects: PROJECT_DATA,
+      current: 0
     };
   }
 
   render() {
+    const { id, ...props } = this.state.projects[this.state.current];
+
+    const handlePrev = () => {
+      let prev = this.state.current - 1;
+      if (prev >= 0) {
+        this.setState({ current: prev });
+      } else {
+        console.log('ERROR: OUT OF BOUNDS');
+      }
+    };
+
+    const handleNext = () => {
+      let next = this.state.current + 1;
+      if (next <= this.state.projects.length - 1) {
+        this.setState({ current: next });
+      } else {
+        console.log('ERROR: OUT OF BOUNDS');
+      }
+    };
+
     return (
       <div className='projects-page'>
         <span className='tagline'>02. Check Out My Work</span>
         <h1 className='heading'>Projects</h1>
-        {this.state.projects.map(({ id, ...props }) => (
-          <Showcase key={id} inverted={id % 2 === 0 && true} {...props} />
-        ))}
+        <hr className='line' />
+        <div className='carousel'>
+          <div className='prev'>
+            <FontAwesomeIcon
+              className='arrow'
+              icon={['fas', 'chevron-left']}
+              size='lg'
+              onClick={handlePrev}
+            />
+          </div>
+          <div className='projects'>
+            <Showcase key={id} inverted={id % 2 === 0 && true} {...props} />
+          </div>
+          <div className='next'>
+            <FontAwesomeIcon
+              className='arrow'
+              icon={['fas', 'chevron-right']}
+              size='lg'
+              onClick={handleNext}
+            />
+          </div>
+        </div>
+        <div className='indicators'>
+          {this.state.projects.map(i => (
+            <div
+              className={`indicator ${
+                this.state.current === this.state.projects.indexOf(i)
+                  ? 'current'
+                  : ''
+              }`}
+              onClick={() => {
+                this.setState({ current: this.state.projects.indexOf(i) });
+              }}
+            ></div>
+          ))}
+        </div>
+        <Button
+          style={{ marginTop: '20px' }}
+          onClick={() =>
+            window.open('https://github.com/oarnosa?tab=repositories')
+          }
+        >
+          View More
+        </Button>
       </div>
     );
   }
