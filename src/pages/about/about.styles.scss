@@ -10,12 +10,19 @@
   justify-content: center;
 
   .tagline {
+    padding-left: 25px;
+    margin-left: 5%;
+    align-self: flex-start;
     font-family: $font-secondary;
     color: $color-secondary;
   }
 
   .heading {
-    padding: 10px 0 20px;
-    font-weight: 700;
+    padding: 15px 25px 25px;
+    margin-left: 5%;
+    align-self: flex-start;
+    font-size: 2.2em;
+    font-weight: 600;
+    letter-spacing: -2px;
   }
 }

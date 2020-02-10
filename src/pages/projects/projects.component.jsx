@@ -22,26 +22,19 @@ class ProjectsPage extends Component {
 
     const handlePrev = () => {
       let prev = this.state.current - 1;
-      if (prev >= 0) {
-        this.setState({ current: prev });
-      } else {
-        console.log('ERROR: OUT OF BOUNDS');
-      }
+      if (prev >= 0) this.setState({ current: prev });
     };
 
     const handleNext = () => {
       let next = this.state.current + 1;
-      if (next <= this.state.projects.length - 1) {
+      if (next <= this.state.projects.length - 1)
         this.setState({ current: next });
-      } else {
-        console.log('ERROR: OUT OF BOUNDS');
-      }
     };
 
     return (
       <div className='projects-page'>
-        <span className='tagline'>02. Check Out My Work</span>
-        <h1 className='heading'>Projects</h1>
+        <span className='tagline'>02. Projects</span>
+        <h1 className='heading'>Check Out My Work</h1>
         <hr className='line' />
         <div className='carousel'>
           <div className='prev'>
@@ -53,7 +46,7 @@ class ProjectsPage extends Component {
             />
           </div>
           <div className='projects'>
-            <Showcase key={id} inverted={id % 2 === 0 && true} {...props} />
+            <Showcase key={id} {...props} />
           </div>
           <div className='next'>
             <FontAwesomeIcon
@@ -65,21 +58,26 @@ class ProjectsPage extends Component {
           </div>
         </div>
         <div className='indicators'>
-          {this.state.projects.map(i => (
+          {this.state.projects.map(project => (
             <div
+              key={project.id}
               className={`indicator ${
-                this.state.current === this.state.projects.indexOf(i)
+                this.state.current === this.state.projects.indexOf(project)
                   ? 'current'
                   : ''
               }`}
               onClick={() => {
-                this.setState({ current: this.state.projects.indexOf(i) });
+                this.setState({
+                  current: this.state.projects.indexOf(project)
+                });
               }}
             ></div>
           ))}
         </div>
         <Button
-          style={{ marginTop: '20px' }}
+          style={{
+            marginTop: '20px'
+          }}
           onClick={() =>
             window.open('https://github.com/oarnosa?tab=repositories')
           }

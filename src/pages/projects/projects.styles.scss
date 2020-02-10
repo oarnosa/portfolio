@@ -8,36 +8,36 @@
   max-width: 1250px;
 
   .tagline {
+    padding-left: 25px;
+    margin-left: 5%;
+    align-self: flex-start;
     font-family: $font-secondary;
     color: $color-secondary;
   }
 
   .heading {
-    padding: 10px 0 20px;
-    font-weight: 700;
-  }
-
-  .line {
-    width: 90%;
-    height: 2px;
-    margin: 10px 0 20px;
-    background-image: linear-gradient(
-      to right,
-      $color-background,
-      $color-tertiary,
-      $color-background
-    );
+    padding: 15px 25px 25px;
+    margin-left: 5%;
+    align-self: flex-start;
+    font-size: 2.2em;
+    font-weight: 600;
+    letter-spacing: -2px;
   }
 
   .carousel {
     height: 100%;
     width: 100%;
     display: grid;
+    min-height: 475px;
     grid-template-columns: 5% 1fr 5%;
 
     .arrow {
       cursor: pointer;
       opacity: 0.5;
+
+      &:hover {
+        opacity: 1;
+      }
     }
 
     .prev {

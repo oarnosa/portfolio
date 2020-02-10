@@ -13,7 +13,7 @@ const Showcase = ({
   serverUrl,
   previewUrl
 }) => (
-  <div className={`showcase ${inverted ? 'inverted' : ''}`}>
+  <div className='showcase'>
     <div className='showcase-image'>
       <img src={imageUrl} alt='' />
     </div>
@@ -22,8 +22,10 @@ const Showcase = ({
       <h2 className='title'>{title}</h2>
       <div className='description'>{description}</div>
       <div className='skills'>
-        {skills.map(skill => (
-          <span className='skill'>{skill}</span>
+        {skills.map((skill, index) => (
+          <span key={index} className='skill'>
+            {skill}
+          </span>
         ))}
       </div>
       <div className='links'>
