@@ -6,8 +6,10 @@ import './contact.styles.scss';
 
 const ContactPage = () => (
   <div className='contact-page'>
-    <p className='tagline'>03. What's Next?</p>
-    <h1 className='heading'>Get In Touch</h1>
+    <div className='heading'>
+      <p className='tagline'>03. What's Next?</p>
+      <h1 className='headline'>Get In Touch</h1>
+    </div>
     <p className='text'>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
       molestiae! Debitis maxime minus nesciunt, natus facilis numquam, labore

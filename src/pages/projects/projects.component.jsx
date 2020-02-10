@@ -33,8 +33,10 @@ class ProjectsPage extends Component {
 
     return (
       <div className='projects-page'>
-        <span className='tagline'>02. Projects</span>
-        <h1 className='heading'>Check Out My Work</h1>
+        <div className='heading'>
+          <span className='tagline'>02. Projects</span>
+          <h1 className='headline'>Check Out My Work</h1>
+        </div>
         <hr className='line' />
         <div className='carousel'>
           <div className='prev'>

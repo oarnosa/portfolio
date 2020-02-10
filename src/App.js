@@ -1,32 +1,54 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { far } from '@fortawesome/free-regular-svg-icons';
-import { fas } from '@fortawesome/free-solid-svg-icons';
+import {
+  faGithub,
+  faLinkedinIn,
+  faInstagram
+} from '@fortawesome/free-brands-svg-icons';
+import {
+  faServer,
+  faExternalLinkAlt,
+  faChevronLeft,
+  faChevronRight
+} from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 import Header from './components/header/header.component';
-import HomePage from './pages/home/home.component';
-import AboutPage from './pages/about/about.component';
-import ProjectsPage from './pages/projects/projects.component';
-import ContactPage from './pages/contact/contact.component';
 import Social from './components/social/social.component';
+import Spinner from './components/spinner/spinner.component';
 
 import './App.scss';
 
-library.add(fab, far, fas);
+const HomePage = lazy(() => import('./pages/home/home.component'));
+const AboutPage = lazy(() => import('./pages/about/about.component'));
+const ProjectsPage = lazy(() => import('./pages/projects/projects.component'));
+const ContactPage = lazy(() => import('./pages/contact/contact.component'));
+
+library.add(
+  faGithub,
+  faLinkedinIn,
+  faInstagram,
+  faServer,
+  faExternalLinkAlt,
+  faChevronLeft,
+  faChevronRight,
+  faEnvelope
+);
 
 const App = () => (
   <Router>
     <Header />
     <Switch>
-      <div className="container">
-        <Route path="/" exact component={HomePage} />
-        <Route path="/about" component={AboutPage} />
-        <Route path="/projects" component={ProjectsPage} />
-        <Route path="/contact" component={ContactPage} />
-      </div>
+      <Suspense fallback={<Spinner />}>
+        <div className='container'>
+          <Route path='/' exact component={HomePage} />
+          <Route path='/about' component={AboutPage} />
+          <Route path='/projects' component={ProjectsPage} />
+          <Route path='/contact' component={ContactPage} />
+        </div>
+      </Suspense>
     </Switch>
     <Social />
   </Router>
