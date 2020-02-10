@@ -3,13 +3,13 @@
 
 .about-page {
   display: flex;
+  padding: 250px;
   flex-direction: column;
-  height: 50%;
-  width: 50%;
   align-items: center;
   justify-content: center;
 
   .heading {
+    height: 100%;
     width: 100%;
     align-self: center;
 
@@ -27,36 +27,44 @@
   }
 
   .about {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 
-    .info {
+    .text {
       opacity: 0.75;
-
-      .text {
-        font-size: 1.1em;
-        line-height: 1.3;
-      }
-
-      .skillset {
-        display: flex;
-        font-size: 0.8em;
-        list-style: none;
-
-        .skill {
-          padding: 25px 25px 0 0;
-          font-family: $font-secondary;
-          color: $color-secondary;
-        }
-      }
+      grid-column: 1/3;
+      grid-row: 1/2;
+      max-width: 500px;
+      font-size: 1.1em;
+      line-height: 1.3;
     }
 
-    .image {
-      img {
-        height: 400px;
-        width: 400px;
-        border-radius: 5px;
-        box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+    .skillset {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      font-size: 0.8em;
+      list-style: none;
+
+      .skill {
+        font-family: $font-secondary;
+        color: $color-secondary;
       }
+    }
+  }
+
+  .image {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    grid-column: 3/4;
+    grid-row: 1/3;
+
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 5px;
+      box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
     }
   }
 }
