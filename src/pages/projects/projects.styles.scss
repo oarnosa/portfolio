@@ -14,7 +14,6 @@
   .carousel {
     display: grid;
     grid-template-columns: 5% 1fr 5%;
-    min-height: 475px;
 
     &__prev {
       margin: auto;
