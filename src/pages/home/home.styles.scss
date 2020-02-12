@@ -19,11 +19,9 @@
     }
 
     &__sub {
+      height: fit-content;
       margin-bottom: 45px;
       opacity: 0.75;
-
-      &__adj {
-      }
     }
   }
 }
