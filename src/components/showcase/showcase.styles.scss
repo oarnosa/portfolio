@@ -58,6 +58,11 @@
       &__link {
         cursor: pointer;
         margin-left: 15px;
+        transition: ease-in-out 0.25s;
+
+        &:hover {
+          color: $color-secondary;
+        }
       }
     }
   }

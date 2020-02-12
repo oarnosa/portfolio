@@ -5,19 +5,18 @@ import Button from "../../components/button/button.component";
 import "./home.styles.scss";
 
 class HomePage extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      adjectives: [
+      current: 0,
+      adj: [
         "full-stack developer",
         "front-end developer",
         "back-end developer",
         "software engineer",
         "minimalist",
-        "gamer",
-        "level 120 orc shaman"
-      ],
-      current: 0
+        "gamer"
+      ]
     };
   }
 
@@ -25,9 +24,9 @@ class HomePage extends Component {
     this.props.history.push(`/about`);
   };
 
-  cycleAdjectives = setInterval(() => {
+  cycleAdj = setInterval(() => {
     let next = this.state.current + 1;
-    if (next > this.state.adjectives.length - 1) {
+    if (next > this.state.adj.length - 1) {
       this.setState({ current: 0 });
     } else {
       this.setState({ current: next });
@@ -43,7 +42,7 @@ class HomePage extends Component {
           <h3 className="hero__sub">
             I am a{" "}
             <span className="hero__sub__adj">
-              {this.state.adjectives[this.state.current]}
+              {this.state.adj[this.state.current]}
             </span>
             .
           </h3>

@@ -9,8 +9,8 @@ import PROJECT_DATA from "./projects.data";
 import "./projects.styles.scss";
 
 class ProjectsPage extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       projects: PROJECT_DATA,
       current: 0

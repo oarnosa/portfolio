@@ -20,6 +20,11 @@
     &__option {
       margin: 10px;
       font-family: $font-secondary;
+      transition: ease-in-out 0.25s;
+
+      &:hover {
+        color: $color-secondary;
+      }
 
       &__code {
         @include accent(1em);
