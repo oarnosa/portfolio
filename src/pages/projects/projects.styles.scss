@@ -1,65 +1,46 @@
-@import '../../assets/styles/main';
+@import "../../assets/styles/main";
 
-.projects-page {
+.page--projects {
   display: flex;
   flex-direction: column;
+  max-width: 70%;
+
+  @include heading(start, 2.2em);
 
   .heading {
     margin-left: 5%;
-    padding-left: 25px;
-    align-self: flex-start;
-
-    .tagline {
-      font-family: $font-secondary;
-      color: $color-secondary;
-    }
-
-    .headline {
-      padding: 15px 0 25px;
-      font-size: 2.2em;
-      font-weight: 600;
-      letter-spacing: -2px;
-    }
   }
 
   .carousel {
-    height: 100%;
-    width: 100%;
     display: grid;
     grid-template-columns: 5% 1fr 5%;
 
-    .arrow {
-      cursor: pointer;
-      opacity: 0.5;
-
-      &:hover {
-        opacity: 1;
-      }
+    &__prev {
+      margin: auto;
     }
 
-    .prev {
-      align-self: center;
-      justify-self: start;
+    &__next {
+      margin: auto;
     }
+  }
 
-    .next {
-      align-self: center;
-      justify-self: end;
-    }
+  .arrow {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.25s;
 
-    .projects {
-      display: flex;
-      align-self: center;
+    &:hover {
+      opacity: 1;
+      transition: 0.25s;
     }
   }
 
   .indicators {
     display: flex;
-    margin: 10px 0 20px;
+    margin: 25px 0;
     justify-content: center;
-    align-items: center;
 
-    .indicator {
+    &__indicator {
       cursor: pointer;
       height: 5px;
       width: 25px;

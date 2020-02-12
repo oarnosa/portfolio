@@ -1,28 +1,13 @@
-@import '../../assets/styles/main';
+@import "../../assets/styles/main";
 
-.contact-page {
+.page--contact {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
-  .heading {
-    align-self: center;
+  @include heading(center, 2.8em);
 
-    .tagline {
-      text-align: center;
-      font-size: 1.1em;
-      font-family: $font-secondary;
-      color: $color-secondary;
-    }
-
-    .headline {
-      padding: 15px 0 25px;
-      font-size: 2.8em;
-      font-weight: 600;
-      letter-spacing: -2px;
-    }
-  }
-
-  .text {
+  .content {
     opacity: 0.75;
     padding-bottom: 45px;
     max-width: 750px;

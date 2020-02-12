@@ -1,31 +1,31 @@
-@import '../../assets/styles/main';
+@import "../../assets/styles/main";
 
-.spinner-overlay {
+.spinner {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.spinner-container {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  border: 3px solid $color-tertiary;
-  border-radius: 50%;
-  border-top-color: $color-primary;
-  animation: spin 1s ease-in-out infinite;
-  -webkit-animation: spin 1s ease-in-out infinite;
+  .spinner__container {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid $color-tertiary;
+    border-radius: 50%;
+    border-top-color: $color-primary;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
 
-  @keyframes spin {
-    to {
-      -webkit-transform: rotate(360deg);
+    @keyframes spin {
+      to {
+        -webkit-transform: rotate(360deg);
+      }
     }
-  }
-  @-webkit-keyframes spin {
-    to {
-      -webkit-transform: rotate(360deg);
+    @-webkit-keyframes spin {
+      to {
+        -webkit-transform: rotate(360deg);
+      }
     }
   }
 }

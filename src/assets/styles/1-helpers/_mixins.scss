@@ -1,18 +1,21 @@
 // Contains all mixins used in the project
 
-@mixin accent() {
+@mixin accent($font-size) {
   color: $color-secondary;
   font-family: $font-secondary;
+  font-size: $font-size;
 }
 
-@mixin heading() {
+@mixin heading($text-align, $font-size) {
   .heading {
+    text-align: $text-align;
+
     &__tag {
-      @include accent();
+      @include accent(1em);
     }
 
     &__main {
-      font-size: 2.2em;
+      font-size: $font-size;
       font-weight: 600;
       letter-spacing: -2px;
       padding: 15px 0 25px;

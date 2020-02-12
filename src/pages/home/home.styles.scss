@@ -1,30 +1,26 @@
-@import '../../assets/styles/main';
+@import "../../assets/styles/main";
 
-.home-page {
+.page--home {
   display: flex;
   flex-direction: column;
-  margin-left: 20%;
-  height: 100%;
   width: 100%;
-  justify-content: center;
+  margin-left: 20%;
 
-  .tagline {
-    font-size: 1.1em;
-    font-family: $font-secondary;
-    color: $color-secondary;
-    margin: 0 0 15px 5px;
-  }
+  .hero {
+    font-size: 4.6em;
 
-  .heading {
-    font-size: 4.5em;
-    letter-spacing: -2px;
-  }
+    &__tag {
+      @include accent(1.1rem);
+      margin: 0 0 15px 5px;
+    }
 
-  .sub-heading {
-    font-size: 4.5em;
-    font-weight: 400;
-    letter-spacing: -2px;
-    opacity: 0.75;
-    margin-bottom: 45px;
+    &__main {
+      font-weight: 600;
+    }
+
+    &__sub {
+      margin-bottom: 45px;
+      opacity: 0.75;
+    }
   }
 }

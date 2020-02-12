@@ -1,13 +1,14 @@
-@import '../../assets/styles/main';
+@import "../../assets/styles/main";
 
 .header {
   display: flex;
   width: 100%;
   padding: 25px 50px;
+  position: absolute;
   justify-content: space-between;
   font-size: 0.85em;
 
-  .logo-container {
+  .logo {
     height: 50px;
     width: 50px;
   }
@@ -16,14 +17,13 @@
     display: flex;
     align-items: center;
 
-    .option {
+    &__option {
       margin: 10px;
       font-family: $font-secondary;
 
-      .code {
+      &__code {
+        @include accent(1em);
         padding-right: 10px;
-        color: $color-secondary;
-        font-family: $font-secondary;
       }
     }
   }

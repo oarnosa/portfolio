@@ -1,47 +1,47 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import './social.styles.scss';
+import "./social.styles.scss";
 
 const Social = () => (
-  <div className='social'>
-    <div className='social-info'>
+  <div className="social">
+    <div className="social__content">
       <FontAwesomeIcon
-        className='icon'
-        icon={['fab', 'github']}
-        size='lg'
-        onClick={() => window.open('https://github.com/oarnosa')}
+        className="social__icon"
+        icon={["fab", "github"]}
+        size="lg"
+        onClick={() => window.open("https://github.com/oarnosa")}
       />
-      <p className='url'>/oarnosa</p>
+      <p className="social__url">/oarnosa</p>
     </div>
-    <div className='social-info'>
+    <div className="social__content">
       <FontAwesomeIcon
-        className='icon'
-        icon={['fab', 'linkedin-in']}
-        size='lg'
-        onClick={() => window.open('https://linkedin.com/in/oarnosa')}
+        className="social__icon"
+        icon={["fab", "linkedin-in"]}
+        size="lg"
+        onClick={() => window.open("https://linkedin.com/in/oarnosa")}
       />
-      <p className='url'>/in/oarnosa/</p>
+      <p className="social__url">/in/oarnosa/</p>
     </div>
-    <div className='social-info'>
+    <div className="social__content">
       <FontAwesomeIcon
-        className='icon'
-        icon={['fab', 'instagram']}
-        size='lg'
-        onClick={() => window.open('https://instagram.com/arno_lando')}
+        className="social__icon"
+        icon={["fab", "instagram"]}
+        size="lg"
+        onClick={() => window.open("https://instagram.com/arno_lando")}
       />
-      <p className='url'>/arno_lando</p>
+      <p className="social__url">/arno_lando</p>
     </div>
-    <div className='social-info'>
+    <div className="social__content">
       <FontAwesomeIcon
-        className='icon'
-        icon={['far', 'envelope']}
-        size='lg'
-        onClick={() => (window.location.href = 'mailto:oarnosa@gmail.com')}
+        className="social__icon"
+        icon={["far", "envelope"]}
+        size="lg"
+        onClick={() => (window.location.href = "mailto:oarnosa@gmail.com")}
       />
-      <p className='url'>oarnosa@gmail.com</p>
+      <p className="social__url">oarnosa@gmail.com</p>
     </div>
-    <div className='vl'></div>
+    <div className="social__decoration"></div>
   </div>
 );
 

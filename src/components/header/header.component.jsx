@@ -1,27 +1,27 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import Button from '../button/button.component';
-import { ReactComponent as Logo } from '../../assets/logo.svg';
+import Button from "../button/button.component";
+import { ReactComponent as Logo } from "../../assets/logo.svg";
 
-import './header.styles.scss';
+import "./header.styles.scss";
 
 const Header = () => (
-  <div className='header'>
-    <Link className='logo-container' to='/'>
+  <div className="header">
+    <Link className="logo" to="/">
       <Logo />
     </Link>
-    <div className='options'>
-      <Link className='option' to='/about'>
-        <span className='code'>01.</span>About
+    <div className="options">
+      <Link className="options__option" to="/about">
+        <span className="options__option__code">01.</span>About
       </Link>
-      <Link className='option' to='/projects'>
-        <span className='code'>02.</span>Projects
+      <Link className="options__option" to="/projects">
+        <span className="options__option__code">02.</span>Projects
       </Link>
-      <Link className='option' to='/contact'>
-        <span className='code'>03.</span>Contact
+      <Link className="options__option" to="/contact">
+        <span className="options__option__code">03.</span>Contact
       </Link>
-      <Button small style={{ marginLeft: '10px' }}>
+      <Button small style={{ marginLeft: "10px" }}>
         Resume
       </Button>
     </div>

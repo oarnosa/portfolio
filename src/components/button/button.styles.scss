@@ -1,8 +1,7 @@
-@import '../../assets/styles/main';
+@import "../../assets/styles/main";
 
 .button {
   cursor: pointer;
-  max-height: 65px;
   max-width: fit-content;
   padding: 20px 28px;
   font-family: $font-secondary;

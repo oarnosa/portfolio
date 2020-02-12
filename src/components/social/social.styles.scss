@@ -1,4 +1,4 @@
-@import '../../assets/styles/main';
+@import "../../assets/styles/main";
 
 .social {
   display: flex;
@@ -6,32 +6,30 @@
   position: fixed;
   bottom: 0;
 
-  .social-info {
+  &__content {
     display: flex;
     margin: 15px 0 15px 63px;
     align-items: center;
+  }
 
-    .icon {
-      cursor: pointer;
+  &__icon {
+    cursor: pointer;
 
-      &:hover {
-        + .url {
-          display: flex;
-        }
+    &:hover {
+      + .social__url {
+        display: flex;
       }
-    }
-
-    .url {
-      @include accent;
-      font-size: 0.85em;
-      margin-left: 15px;
-      display: none;
     }
   }
 
-  .vl {
+  &__url {
+    @include accent(0.85em);
+    margin-left: 15px;
+    display: none;
+  }
+
+  &__decoration {
     height: 100px;
-    width: fit-content;
     margin: 15px 0 0 73px;
     border-left: 1px solid $color-primary;
   }

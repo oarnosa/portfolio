@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { Component } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import Showcase from '../../components/showcase/showcase.component';
-import Button from '../../components/button/button.component';
+import Showcase from "../../components/showcase/showcase.component";
+import Button from "../../components/button/button.component";
 
-import PROJECT_DATA from './projects.data';
+import PROJECT_DATA from "./projects.data";
 
-import './projects.styles.scss';
+import "./projects.styles.scss";
 
 class ProjectsPage extends Component {
   constructor() {
@@ -32,41 +32,40 @@ class ProjectsPage extends Component {
     };
 
     return (
-      <div className='projects-page'>
-        <div className='heading'>
-          <span className='tagline'>02. Projects</span>
-          <h1 className='headline'>Check Out My Work</h1>
+      <div className="page--projects">
+        <div className="heading">
+          <span className="heading__tag">02. Projects</span>
+          <h1 className="heading__main">Check Out My Work</h1>
         </div>
-        <hr className='line' />
-        <div className='carousel'>
-          <div className='prev'>
+        <div className="carousel">
+          <div className="carousel__prev">
             <FontAwesomeIcon
-              className='arrow'
-              icon={['fas', 'chevron-left']}
-              size='lg'
+              className="arrow"
+              icon={["fas", "chevron-left"]}
+              size="lg"
               onClick={handlePrev}
             />
           </div>
-          <div className='projects'>
+          <div className="carousel__project">
             <Showcase key={id} {...props} />
           </div>
-          <div className='next'>
+          <div className="carousel__next">
             <FontAwesomeIcon
-              className='arrow'
-              icon={['fas', 'chevron-right']}
-              size='lg'
+              className="arrow"
+              icon={["fas", "chevron-right"]}
+              size="lg"
               onClick={handleNext}
             />
           </div>
         </div>
-        <div className='indicators'>
+        <div className="indicators">
           {this.state.projects.map(project => (
             <div
               key={project.id}
-              className={`indicator ${
+              className={`indicators__indicator ${
                 this.state.current === this.state.projects.indexOf(project)
-                  ? 'current'
-                  : ''
+                  ? "current"
+                  : ""
               }`}
               onClick={() => {
                 this.setState({
@@ -78,10 +77,10 @@ class ProjectsPage extends Component {
         </div>
         <Button
           style={{
-            marginTop: '20px'
+            alignSelf: "center"
           }}
           onClick={() =>
-            window.open('https://github.com/oarnosa?tab=repositories')
+            window.open("https://github.com/oarnosa?tab=repositories")
           }
         >
           View More

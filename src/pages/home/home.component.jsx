@@ -1,21 +1,21 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import Button from '../../components/button/button.component';
+import Button from "../../components/button/button.component";
 
-import './home.styles.scss';
+import "./home.styles.scss";
 
 class HomePage extends Component {
   constructor() {
     super();
     this.state = {
       adjectives: [
-        'full-stack developer',
-        'front-end developer',
-        'back-end developer',
-        'software engineer',
-        'minimalist',
-        'gamer',
-        'level 120 orc shaman'
+        "full-stack developer",
+        "front-end developer",
+        "back-end developer",
+        "software engineer",
+        "minimalist",
+        "gamer",
+        "level 120 orc shaman"
       ],
       current: 0
     };
@@ -36,16 +36,18 @@ class HomePage extends Component {
 
   render() {
     return (
-      <div className='home-page'>
-        <p className='tagline'>Hey, my name is</p>
-        <h1 className='heading'>Orlando Arnosa.</h1>
-        <h3 className='sub-heading'>
-          I am a{' '}
-          <span className='adjective'>
-            {this.state.adjectives[this.state.current]}
-          </span>
-          .
-        </h3>
+      <div className="page--home">
+        <section className="hero">
+          <p className="hero__tag">Hey, my name is</p>
+          <h1 className="hero__main">Orlando Arnosa.</h1>
+          <h3 className="hero__sub">
+            I am a{" "}
+            <span className="hero__sub__adj">
+              {this.state.adjectives[this.state.current]}
+            </span>
+            .
+          </h3>
+        </section>
         <Button onClick={this.handleOnClick}>Get to Know Me</Button>
       </div>
     );

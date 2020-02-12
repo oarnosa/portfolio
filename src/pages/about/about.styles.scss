@@ -1,37 +1,45 @@
-@import '../../assets/styles/main';
+@import "../../assets/styles/main";
 
 .page--about {
   display: flex;
   flex-direction: column;
 
   .heading {
-    @include heading;
+    @include heading(start, 2.2em);
   }
 
   .about {
     display: flex;
 
-    &__info {
+    &__content {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
 
-      &__text {
+      &__info {
         opacity: 0.75;
+        max-width: 500px;
+        padding-bottom: 10px;
       }
 
       &__skillset {
-        font-size: 0.8em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        list-style: inside square;
 
         &__skill {
-          @include accent;
+          @include accent(0.85em);
+          padding: 5px 0;
         }
       }
     }
 
     &__image {
-      height: 300px;
-      width: 300px;
+      height: 350px;
+      width: 350px;
       border-radius: 5px;
+      margin-left: 25px;
       box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
     }
   }
