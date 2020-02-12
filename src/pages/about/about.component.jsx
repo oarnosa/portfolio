@@ -36,11 +36,14 @@ const AboutPage = () => (
           <li className="about__content__skillset__skill">Express</li>
         </ul>
       </div>
-      <img
-        className="about__image"
-        src="https://i.ibb.co/JzTLtGV/headshot-square.jpg"
-        alt=""
-      />
+      <div className="about__container">
+        <img
+          className="about__container__image"
+          src="https://i.ibb.co/JzTLtGV/headshot-square.jpg"
+          alt=""
+        />
+        <div className="about__container__decoration"></div>
+      </div>
     </section>
   </div>
 );

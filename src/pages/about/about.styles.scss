@@ -35,12 +35,28 @@
       }
     }
 
-    &__image {
+    &__container {
       height: 350px;
       width: 350px;
-      border-radius: 5px;
       margin-left: 25px;
-      box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+      position: relative;
+
+      &__image {
+        position: absolute;
+        border-radius: 5px;
+        z-index: 10;
+        box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+      }
+
+      &__decoration {
+        height: inherit;
+        width: inherit;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        z-index: 1;
+        border: 5px solid $color-secondary;
+      }
     }
   }
 }
