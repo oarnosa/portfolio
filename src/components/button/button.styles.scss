@@ -1,19 +1,15 @@
-@import '../../assets/styles/_colors.scss';
-@import '../../assets/styles/_fonts.scss';
+@import '../../assets/styles/main';
 
 .button {
+  cursor: pointer;
   max-height: 65px;
   max-width: fit-content;
-  cursor: pointer;
-  outline: none;
   padding: 20px 28px;
-  color: $color-secondary;
   font-family: $font-secondary;
-  font-size: 1em;
-  background-color: rgba(0, 0, 0, 0);
-  transition: 0.25s;
-  border: 1px solid $color-secondary;
   border-radius: 5px;
+  border: 1px solid $color-secondary;
+  color: $color-secondary;
+  transition: 0.25s;
 
   &:hover {
     background-color: rgba($color-secondary, $alpha: 0.2);

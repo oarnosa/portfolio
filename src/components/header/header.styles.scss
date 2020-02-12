@@ -1,15 +1,10 @@
-@import '../../assets/styles/_colors.scss';
-@import '../../assets/styles/_fonts.scss';
+@import '../../assets/styles/main';
 
 .header {
   display: flex;
-  height: 100px;
   width: 100%;
-  position: fixed;
-  top: 0px;
-  padding: 0 50px;
+  padding: 25px 50px;
   justify-content: space-between;
-  align-items: center;
   font-size: 0.85em;
 
   .logo-container {

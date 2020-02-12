@@ -1,0 +1,21 @@
+// Contains all mixins used in the project
+
+@mixin accent() {
+  color: $color-secondary;
+  font-family: $font-secondary;
+}
+
+@mixin heading() {
+  .heading {
+    &__tag {
+      @include accent();
+    }
+
+    &__main {
+      font-size: 2.2em;
+      font-weight: 600;
+      letter-spacing: -2px;
+      padding: 15px 0 25px;
+    }
+  }
+}

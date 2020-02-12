@@ -42,7 +42,7 @@ const App = () => (
     <Header />
     <Switch>
       <Suspense fallback={<Spinner />}>
-        <div className='container'>
+        <div className='wrapper'>
           <Route path='/' exact component={HomePage} />
           <Route path='/about' component={AboutPage} />
           <Route path='/projects' component={ProjectsPage} />

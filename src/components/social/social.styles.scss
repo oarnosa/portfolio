@@ -1,5 +1,4 @@
-@import '../../assets/styles/_colors.scss';
-@import '../../assets/styles/_fonts.scss';
+@import '../../assets/styles/main';
 
 .social {
   display: flex;
@@ -23,9 +22,8 @@
     }
 
     .url {
+      @include accent;
       font-size: 0.85em;
-      font-family: $font-secondary;
-      color: $color-secondary;
       margin-left: 15px;
       display: none;
     }
