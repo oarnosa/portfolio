@@ -5,7 +5,15 @@
   flex-direction: column;
 
   .heading {
-    @include heading;
+    text-align: start;
+
+    &__tag {
+      @include accent;
+    }
+
+    &__main {
+      font-weight: 700;
+    }
   }
 
   .about {

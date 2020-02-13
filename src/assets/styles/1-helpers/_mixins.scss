@@ -1,6 +1,5 @@
 // Contains all mixins used in the project
 
-// Fira Code -- red
 @mixin accent {
   color: $color-secondary;
   font-family: $font-secondary;
@@ -13,22 +12,7 @@
   line-height: 27px;
 }
 
-// Fira Code -- white
 @mixin sub {
   color: $color-primary;
   font-family: $font-secondary;
-}
-
-@mixin heading {
-  .heading {
-    text-align: start;
-
-    &__tag {
-      @include accent;
-    }
-
-    &__main {
-      font-weight: 700;
-    }
-  }
 }

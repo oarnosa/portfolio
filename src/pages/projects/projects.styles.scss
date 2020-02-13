@@ -5,10 +5,17 @@
   flex-direction: column;
   max-width: 70%;
 
-  @include heading;
-
   .heading {
     margin-left: 5%;
+    text-align: start;
+
+    &__tag {
+      @include accent;
+    }
+
+    &__main {
+      font-weight: 700;
+    }
   }
 
   .carousel {
