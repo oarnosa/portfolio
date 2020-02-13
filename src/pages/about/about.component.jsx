@@ -6,20 +6,16 @@ const AboutPage = () => (
   <div className="page--about">
     <div className="heading">
       <p className="heading__tag">01. About</p>
-      <h1 className="heading__main">Get to Know Me</h1>
+      <h2 className="heading__main">Get to Know Me</h2>
     </div>
     <section className="about">
       <div className="about__content">
         <p className="about__content__info">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-          perspiciatis, commodi reprehenderit, similique repudiandae ipsum
-          nesciunt facere odit, quo pariatur deleniti eos deserunt iure
-          expedita?
-        </p>
-        <p className="about__content__info">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium,
-          tenetur molestiae! Quas saepe voluptates beatae suscipit ipsum
-          similique consequuntur omnis?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+          blanditiis neque illo quae ex provident inventore delectus vel
+          repellendus! Eligendi alias eius illo, unde exercitationem laborum
+          debitis obcaecati deserunt. Veritatis perspiciatis iusto accusamus
+          repudiandae? Cupiditate.
         </p>
         <p className="about__content__info">
           Lorem ipsum dolor, sit consectetur adipisicing elit:

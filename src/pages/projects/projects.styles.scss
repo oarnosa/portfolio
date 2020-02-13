@@ -5,7 +5,7 @@
   flex-direction: column;
   max-width: 70%;
 
-  @include heading(start, 2.2em);
+  @include heading;
 
   .heading {
     margin-left: 5%;

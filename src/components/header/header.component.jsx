@@ -21,7 +21,7 @@ const Header = () => (
       <Link className="options__option" to="/contact">
         <span className="options__option__code">03.</span>Contact
       </Link>
-      <Button small style={{ marginLeft: "10px" }}>
+      <Button small style={{ marginLeft: "15px" }}>
         Resume
       </Button>
     </div>

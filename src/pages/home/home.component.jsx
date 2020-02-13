@@ -18,7 +18,7 @@ const HomePage = () => {
       <section className="hero">
         <p className="hero__tag">Hey, my name is</p>
         <h1 className="hero__main">Orlando Arnosa.</h1>
-        <h3 className="hero__sub">
+        <h2 className="hero__sub">
           I am a{" "}
           <TextLoop
             children={[
@@ -33,7 +33,7 @@ const HomePage = () => {
             mask
           />
           .
-        </h3>
+        </h2>
       </section>
       <Button onClick={handleOnClick}>Get to Know Me</Button>
     </div>

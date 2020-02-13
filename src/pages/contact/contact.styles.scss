@@ -5,14 +5,16 @@
   flex-direction: column;
   align-items: center;
 
-  @include heading(center, 2.8em);
+  @include heading;
+  .heading__tag {
+    text-align: center;
+  }
 
   .content {
     opacity: 0.75;
-    padding-bottom: 45px;
+    margin-bottom: 50px;
     max-width: 750px;
-    font-size: 1.1em;
-    line-height: 1.3;
+    font-size: 1em;
     text-align: center;
   }
 }

@@ -31,7 +31,7 @@ const ProjectsPage = () => {
     <div className="page--projects">
       <div className="heading">
         <span className="heading__tag">02. Projects</span>
-        <h1 className="heading__main">Check Out My Work</h1>
+        <h2 className="heading__main">Check Out My Work</h2>
       </div>
       <div className="carousel">
         <div className="carousel__prev">

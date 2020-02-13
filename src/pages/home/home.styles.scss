@@ -7,20 +7,22 @@
   margin-left: 20%;
 
   .hero {
-    font-size: 4.6em;
+    margin-bottom: 50px;
 
     &__tag {
-      @include accent(1.1rem);
-      margin: 0 0 15px 5px;
+      @include accent;
+      margin: 0 0 20px 5px;
     }
 
     &__main {
-      font-weight: 600;
+      font-size: 72px;
+      line-height: 88px;
+      font-weight: 700;
     }
 
     &__sub {
-      height: fit-content;
-      margin-bottom: 45px;
+      font-size: 72px;
+      line-height: 88px;
       opacity: 0.75;
     }
   }

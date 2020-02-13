@@ -27,7 +27,7 @@
   }
 
   &__url {
-    @include accent(0.85em);
+    @include accent--small;
     transition: ease-in-out 0.25s;
     margin-left: 15px;
     opacity: 0;
