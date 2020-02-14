@@ -30,7 +30,7 @@ const Social = () => (
         size="lg"
         onClick={() => window.open("https://instagram.com/arno_lando")}
       />
-      <p className="social__url">/arno_lando</p>
+      <p className="social__url">@arno_lando</p>
     </div>
     <div className="social__content">
       <FontAwesomeIcon

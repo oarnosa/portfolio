@@ -14,12 +14,23 @@ const PROJECTS_DATA = [
     id: 2,
     title: "Chatter",
     description:
-      "Real-time chat application which allows for communciation between multiple users inside of a chatroom.",
+      "Real-time chat application which allows for communciation between multiple users within chatrooms.",
     imageUrl: "https://i.ibb.co/KmpdvKQ/chatter.jpg",
     skills: ["React", "Node", "Express", "Socket.io"],
     githubUrl: "https://github.com/oarnosa/chatter",
     serverUrl: "https://oarnosa-chatter-server.herokuapp.com",
     previewUrl: "https://oarnosa-chatter.herokuapp.com"
+  },
+  {
+    id: 3,
+    title: "CampSite",
+    description:
+      "A RESTful web app which allows users share and find camping sites around the world.",
+    imageUrl: "https://i.ibb.co/ScR4nxd/campsite.jpg",
+    skills: ["Embeddedjs", "Node", "Express", "MongoDB"],
+    githubUrl: "https://github.com/oarnosa/campsite",
+    serverUrl: "",
+    previewUrl: "https://oarnosa-campsite.herokuapp.com"
   }
 ];
 
