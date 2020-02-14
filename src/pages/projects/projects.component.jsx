@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Showcase from "../../components/showcase/showcase.component";
-import Button from "../../components/button/button.component";
 
 import PROJECT_DATA from "./projects.data";
 
@@ -67,16 +66,6 @@ const ProjectsPage = () => {
           ></div>
         ))}
       </div>
-      <Button
-        style={{
-          alignSelf: "center"
-        }}
-        onClick={() =>
-          window.open("https://github.com/oarnosa?tab=repositories")
-        }
-      >
-        View More
-      </Button>
     </div>
   );
 };

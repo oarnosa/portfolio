@@ -8,7 +8,7 @@ import "./header.styles.scss";
 
 const Header = () => (
   <div className="header">
-    <Link className="brand__logo" to="/" aria-label="Orlando Arnosa Logo">
+    <Link className="brand__logo" to="/" aria-label="Brand Logo">
       <Logo />
     </Link>
     <div className="options">

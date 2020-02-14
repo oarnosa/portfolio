@@ -16,7 +16,7 @@ const Showcase = ({
     <img className="showcase__image" src={imageUrl} alt="" />
     <div className="showcase__content">
       <p className="showcase__content__featured">Featured Project</p>
-      <h2 className="showcase__content__title">{title}</h2>
+      <h3 className="showcase__content__title">{title}</h3>
       <div className="showcase__content__description">{description}</div>
       <div className="showcase__content__skills">
         {skills.map((skill, index) => (

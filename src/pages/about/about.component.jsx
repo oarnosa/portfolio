@@ -11,14 +11,13 @@ const AboutPage = () => (
     <section className="about">
       <div className="about__content">
         <p className="about__content__info">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-          blanditiis neque illo quae ex provident inventore delectus vel
-          repellendus! Eligendi alias eius illo, unde exercitationem laborum
-          debitis obcaecati deserunt. Veritatis perspiciatis iusto accusamus
-          repudiandae? Cupiditate.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          minima, rem impedit doloribus modi repudiandae voluptas ducimus
+          accusantium placeat beatae consectetur natus eum tenetur asperiores
+          reprehenderit ipsam provident non exercitationem!
         </p>
         <p className="about__content__info">
-          Lorem ipsum dolor, sit consectetur adipisicing elit:
+          Lorem ipsum dolor sit amet consectetur adipisicing elit:
         </p>
         <ul className="about__content__skillset">
           <li className="about__content__skillset__skill">Javascript (ES6+)</li>

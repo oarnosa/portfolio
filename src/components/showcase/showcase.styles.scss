@@ -26,17 +26,11 @@
     z-index: 10;
 
     &__featured {
-      @include accent;
-      margin-bottom: 10px;
-    }
-
-    &__title {
-      font-size: 1.85em;
-      margin-bottom: 20px;
+      @include accent--small;
     }
 
     &__description {
-      padding: 25px;
+      padding: 20px;
       border-radius: 3px;
       color: rgba($color-primary, $alpha: 0.75);
       background-color: $color-tertiary;
@@ -44,10 +38,11 @@
     }
 
     &__skills {
-      margin: 25px 0;
+      margin: 20px 0;
 
       &__skill {
         @include sub;
+        font-size: 15px;
         margin-left: 15px;
         opacity: 0.5;
       }
