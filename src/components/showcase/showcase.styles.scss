@@ -6,16 +6,21 @@
   grid-template-rows: repeat(2, 1fr);
   gap: 25px;
 
-  &__image {
-    height: 100%;
-    width: 100%;
-    min-height: 475px;
+  &__container {
+    padding-bottom: 56.25%;
     position: relative;
-    grid-column: 1/8;
+    grid-column: 1 /8;
     grid-row: 1/3;
     z-index: 1;
-    border-radius: 3px;
-    box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+
+    &__image {
+      height: 100%;
+      width: 100%;
+      display: block;
+      position: absolute;
+      border-radius: 3px;
+      box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+    }
   }
 
   &__content {

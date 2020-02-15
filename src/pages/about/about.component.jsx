@@ -38,7 +38,7 @@ const AboutPage = () => (
         <div className="about__container">
           <img
             className="about__container__image"
-            src="https://i.ibb.co/JzTLtGV/headshot-square.jpg"
+            src="images/headshot-square.jpg"
             alt=""
           />
           <div className="about__container__decoration"></div>

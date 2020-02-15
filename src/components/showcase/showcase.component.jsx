@@ -15,7 +15,9 @@ const Showcase = ({
 }) => (
   <div className="showcase">
     <Fade>
-      <img className="showcase__image" src={imageUrl} alt="" />
+      <div className="showcase__container">
+        <img className="showcase__container__image" src={imageUrl} alt="" />
+      </div>
       <div className="showcase__content">
         <h3 className="showcase__content__title">{title}</h3>
         <div className="showcase__content__description">{description}</div>

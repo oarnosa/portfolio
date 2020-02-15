@@ -4,7 +4,7 @@ const PROJECTS_DATA = [
     title: "Royal Apparel",
     description:
       "Online e-commerce app where users can shop, browse, and buy the latest clothes.",
-    imageUrl: "https://i.ibb.co/Xk30V8q/Royal-Apparel.jpg",
+    imageUrl: "images/royal-apparel.jpg",
     skills: ["React", "Redux", "Node", "Stripe", "Firebase"],
     githubUrl: "https://github.com/oarnosa/royal-apparel",
     serverUrl: "",
@@ -15,7 +15,7 @@ const PROJECTS_DATA = [
     title: "Chatter",
     description:
       "Real-time chat application which allows for communciation between multiple users within chatrooms.",
-    imageUrl: "https://i.ibb.co/KmpdvKQ/chatter.jpg",
+    imageUrl: "images/chatter.jpg",
     skills: ["React", "Node", "Express", "Socket.io"],
     githubUrl: "https://github.com/oarnosa/chatter",
     serverUrl: "https://oarnosa-chatter-server.herokuapp.com",
@@ -26,8 +26,8 @@ const PROJECTS_DATA = [
     title: "CampSite",
     description:
       "A RESTful web app which allows users share and find camping sites around the world.",
-    imageUrl: "https://i.ibb.co/ScR4nxd/campsite.jpg",
-    skills: ["Embeddedjs", "Node", "Express", "MongoDB"],
+    imageUrl: "images/campsite.jpg",
+    skills: ["EJS", "Node", "Express", "MongoDB"],
     githubUrl: "https://github.com/oarnosa/campsite",
     serverUrl: "",
     previewUrl: "https://oarnosa-campsite.herokuapp.com"
