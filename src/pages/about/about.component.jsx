@@ -13,13 +13,21 @@ const AboutPage = () => (
       <section className="about">
         <div className="about__content">
           <p className="about__content__info">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-            minima, rem impedit doloribus modi repudiandae voluptas ducimus
-            accusantium placeat beatae consectetur natus eum tenetur asperiores
-            reprehenderit ipsam provident non exercitationem!
+            Hey! I'm Orlando, a full-stack developer and computer science
+            graduate from{" "}
+            <span className="about__content__info__special">
+              Florida International Universtiy
+            </span>{" "}
+            . I specialize in building high-quality, responsive, and performant
+            websites and enjoy turning complex problems into simple, and
+            intuitive solutions.
           </p>
           <p className="about__content__info">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit:
+            When I am not coding, you'll often find me in the gym, with friends
+            and family, or in World of Warcraft where I play an Orc Shaman.
+          </p>
+          <p className="about__content__info">
+            Here are some technologies I've been working with lately:
           </p>
           <ul className="about__content__skillset">
             <li className="about__content__skillset__skill">

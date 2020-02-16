@@ -12,12 +12,14 @@ const ContactPage = () => (
         <p className="heading__tag">03. What's Next?</p>
         <h1 className="heading__main">Get In Touch</h1>
       </div>
-      <p className="content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
-        molestiae! Debitis maxime minus nesciunt, natus facilis numquam, labore
-        vel ea dicta tempora voluptates dolorum magni! Eveniet soluta architecto
-        animi facilis!
-      </p>
+      <div className="content">
+        <p className="content__info">
+          I am always open to new opportunities and meeting new people. If you
+          want to build something together, discuss new opportunites, or even
+          play some games, my inbox is always open. Feel free to reach out and
+          I'll do my best to respond!
+        </p>
+      </div>
       <Button
         onClick={() => (window.location.href = "mailto:oarnosa@gmail.com")}
       >

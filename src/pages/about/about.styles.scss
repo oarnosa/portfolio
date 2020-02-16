@@ -18,6 +18,7 @@
 
   .about {
     display: flex;
+    align-items: center;
 
     &__content {
       display: flex;
@@ -26,8 +27,15 @@
 
       &__info {
         opacity: 0.75;
-        max-width: 550px;
+        max-width: 600px;
         padding-bottom: 10px;
+
+        &__special {
+          cursor: pointer;
+          color: $color-secondary;
+          font-weight: 500;
+          opacity: 1;
+        }
       }
 
       &__skillset {
