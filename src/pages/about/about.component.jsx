@@ -15,7 +15,10 @@ const AboutPage = () => (
           <p className="about__content__info">
             Hey! I'm Orlando, a full-stack developer and computer science
             graduate from{" "}
-            <span className="about__content__info__special">
+            <span
+              className="about__content__special"
+              onClick={() => window.open("https://linkedin.com/in/oarnosa")}
+            >
               Florida International Universtiy
             </span>{" "}
             . I specialize in building high-quality, responsive, and performant

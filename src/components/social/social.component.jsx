@@ -19,7 +19,7 @@ const Social = () => (
         className="social__icon"
         icon={["fab", "linkedin-in"]}
         size="lg"
-        onClick={() => window.open("https://linkedin.com/in/oarnosa")}
+        onClick={() => window.open("https://www.fiu.edu/")}
       />
       <p className="social__url">/in/oarnosa/</p>
     </div>
