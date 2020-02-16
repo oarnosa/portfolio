@@ -16,11 +16,11 @@ const AboutPage = () => (
             Hey! I'm Orlando, a full-stack developer and computer science
             graduate from{" "}
             <span
-              className="about__content__special"
-              onClick={() => window.open("https://linkedin.com/in/oarnosa")}
+              className="about__content__info__special"
+              onClick={() => window.open("https://www.fiu.edu/")}
             >
-              Florida International Universtiy
-            </span>{" "}
+              Florida International University
+            </span>
             . I specialize in building high-quality, responsive, and performant
             websites and enjoy turning complex problems into simple, and
             intuitive solutions.
