@@ -8,7 +8,13 @@ const Footer = () => (
       &copy; 2020 Orlando Arnosa. All Rights Reserved.
     </p>
     <p className="footer__info">
-      Email: <span className="footer__info__special">oarnosa@gmail.com</span>
+      Email:{" "}
+      <span
+        className="footer__info__special"
+        onClick={() => (window.location.href = "mailto:oarnosa@gmail.com")}
+      >
+        oarnosa@gmail.com
+      </span>
     </p>
   </div>
 );
