@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Fade from "react-reveal/Fade";
 
 import Showcase from "../../components/showcase/showcase.component";
+import Button from "../../components/button/button.component";
 
 import PROJECT_DATA from "./projects.data";
 
@@ -69,6 +70,15 @@ const ProjectsPage = () => {
               }}
             ></div>
           ))}
+        </div>
+        <div className="button__container">
+          <Button
+            onClick={() =>
+              window.open("https://github.com/oarnosa?tab=repositories")
+            }
+          >
+            View More
+          </Button>
         </div>
       </Fade>
     </div>

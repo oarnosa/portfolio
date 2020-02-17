@@ -13,11 +13,12 @@ import {
   faChevronLeft,
   faChevronRight
 } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faEnvelope, faCopyright } from "@fortawesome/free-regular-svg-icons";
 
 import Header from "./components/header/header.component";
 import Social from "./components/social/social.component";
 import Spinner from "./components/spinner/spinner.component";
+import Footer from "./components/footer/footer.component";
 
 import "./App.scss";
 
@@ -34,7 +35,8 @@ library.add(
   faExternalLinkAlt,
   faChevronLeft,
   faChevronRight,
-  faEnvelope
+  faEnvelope,
+  faCopyright
 );
 
 const App = () => (
@@ -51,6 +53,7 @@ const App = () => (
       </Suspense>
     </Switch>
     <Social />
+    <Footer />
   </Router>
 );
 

@@ -1,0 +1,22 @@
+@import "../../assets/styles/main";
+
+.footer {
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color-secondary;
+  background-color: rgba($color-tertiary, $alpha: 0.5);
+  font-size: 13px;
+  font-family: $font-secondary;
+  z-index: 1;
+
+  &__info {
+    padding: 0 50px 0;
+
+    &__special {
+      color: $color-primary;
+    }
+  }
+}

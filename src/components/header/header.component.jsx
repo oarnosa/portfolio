@@ -21,7 +21,15 @@ const Header = () => (
       <Link className="options__option" to="/contact">
         <span className="options__option__code">03.</span>Contact
       </Link>
-      <Button small style={{ marginLeft: "15px" }}>
+      <Button
+        small
+        style={{ marginLeft: "15px" }}
+        onClick={() =>
+          window.open(
+            "https://drive.google.com/file/d/1UO2qD8b0FMwuggKP3qBBtU2AsHCNGqKn/view"
+          )
+        }
+      >
         Resume
       </Button>
     </div>
