@@ -12,7 +12,11 @@
     width: 50px;
   }
 
-  .options {
+  &__menu {
+    display: none;
+  }
+
+  &__options {
     display: flex;
     align-items: center;
 
@@ -29,6 +33,22 @@
         @include accent;
         padding-right: 10px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-laptop) {
+  .header {
+    position: sticky;
+    padding: 7.5px 15px;
+    align-items: center;
+
+    &__menu {
+      display: flex;
+    }
+
+    &__options {
+      display: none;
     }
   }
 }

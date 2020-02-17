@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import MediaQuery from "react-responsive";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -11,9 +12,10 @@ import {
   faServer,
   faExternalLinkAlt,
   faChevronLeft,
-  faChevronRight
+  faChevronRight,
+  faBars
 } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope, faCopyright } from "@fortawesome/free-regular-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 import Header from "./components/header/header.component";
 import Social from "./components/social/social.component";
@@ -36,23 +38,35 @@ library.add(
   faChevronLeft,
   faChevronRight,
   faEnvelope,
-  faCopyright
+  faBars
 );
 
 const App = () => (
   <Router>
     <Header />
-    <Switch>
+    {/* laptop & desktop view */}
+    <MediaQuery minWidth={950}>
+      <Switch>
+        <Suspense fallback={<Spinner />}>
+          <div className="wrapper">
+            <Route path="/" exact component={HomePage} />
+            <Route path="/about" component={AboutPage} />
+            <Route path="/projects" component={ProjectsPage} />
+            <Route path="/contact" component={ContactPage} />
+          </div>
+        </Suspense>
+      </Switch>
+      <Social />
+    </MediaQuery>
+    {/* mobile & tablet view */}
+    <MediaQuery maxWidth={950}>
       <Suspense fallback={<Spinner />}>
-        <div className="wrapper">
-          <Route path="/" exact component={HomePage} />
-          <Route path="/about" component={AboutPage} />
-          <Route path="/projects" component={ProjectsPage} />
-          <Route path="/contact" component={ContactPage} />
-        </div>
+        {/* <HomePage />
+        <AboutPage />
+        <ProjectsPage />
+        <ContactPage /> */}
       </Suspense>
-    </Switch>
-    <Social />
+    </MediaQuery>
     <Footer />
   </Router>
 );
