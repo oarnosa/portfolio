@@ -21,20 +21,22 @@ const HomePage = () => {
           <p className="hero__tag">Hey, my name is</p>
           <h1 className="hero__main">Orlando Arnosa.</h1>
           <h2 className="hero__sub">
-            I am a{" "}
-            <TextLoop
-              children={[
-                "full-stack developer",
-                "front-end developer",
-                "back-end developer",
-                "software engineer",
-                "minimalist",
-                "gamer"
-              ]}
-              springConfig={{ stiffness: 250, damping: 15 }}
-              mask
-            />
-            .
+            <span className="hero__sub__text">I am a </span>
+            <span className="hero__sub__text">
+              <TextLoop
+                children={[
+                  "full-stack developer",
+                  "front-end developer",
+                  "back-end developer",
+                  "software engineer",
+                  "minimalist",
+                  "gamer"
+                ]}
+                springConfig={{ stiffness: 250, damping: 15 }}
+                mask
+              />
+              .
+            </span>
           </h2>
         </section>
         <Button onClick={handleOnClick}>Get to Know Me</Button>

@@ -61,10 +61,12 @@ const App = () => (
     {/* mobile & tablet view */}
     <MediaQuery maxWidth={950}>
       <Suspense fallback={<Spinner />}>
-        {/* <HomePage />
-        <AboutPage />
-        <ProjectsPage />
-        <ContactPage /> */}
+        <div className="wrapper">
+          <HomePage />
+          {/* <AboutPage /> */}
+          {/* <ProjectsPage /> */}
+          {/* <ContactPage /> */}
+        </div>
       </Suspense>
     </MediaQuery>
     <Footer />

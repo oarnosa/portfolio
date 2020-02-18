@@ -7,3 +7,14 @@
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width: $breakpoint-laptop) {
+  .wrapper {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 0 25px;
+  }
+}

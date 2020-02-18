@@ -2,6 +2,7 @@
 
 .header {
   display: flex;
+  height: 100px;
   width: 100%;
   padding: 25px 50px;
   position: absolute;
@@ -39,8 +40,7 @@
 
 @media screen and (max-width: $breakpoint-laptop) {
   .header {
-    position: sticky;
-    padding: 7.5px 15px;
+    padding: 0 25px;
     align-items: center;
 
     &__menu {
