@@ -85,7 +85,8 @@
 @media screen and (max-width: $breakpoint-laptop) {
   .page--about {
     display: flex;
-    min-height: 110vh;
+    min-height: 125vh;
+    justify-content: center;
 
     .heading {
       &__main {
@@ -110,7 +111,7 @@
         position: relative;
         height: 225px;
         width: 225px;
-        margin: 25px 25px 0 0;
+        margin: 50px 25px 0 0;
       }
     }
   }

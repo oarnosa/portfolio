@@ -32,11 +32,11 @@
   .page--home {
     display: flex;
     min-height: 100vh;
-    justify-content: center;
-    margin-left: 0;
+    margin: 0;
+    padding-top: 225px;
 
     .hero {
-      margin: 25px 0 75px 0;
+      margin: 0 0 75px 0;
 
       &__tag {
         margin: 0 0 0 5px;
