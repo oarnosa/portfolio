@@ -63,9 +63,9 @@ const App = () => (
       <Suspense fallback={<Spinner />}>
         <div className="wrapper">
           <HomePage />
-          {/* <AboutPage /> */}
+          <AboutPage />
           {/* <ProjectsPage /> */}
-          {/* <ContactPage /> */}
+          <ContactPage />
         </div>
       </Suspense>
     </MediaQuery>
