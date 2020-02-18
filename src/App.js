@@ -64,7 +64,7 @@ const App = () => (
         <div className="wrapper">
           <HomePage />
           <AboutPage />
-          {/* <ProjectsPage /> */}
+          <ProjectsPage />
           <ContactPage />
         </div>
       </Suspense>

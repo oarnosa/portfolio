@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import MediaQuery from "react-responsive";
 import Fade from "react-reveal/Fade";
 
 import Showcase from "../../components/showcase/showcase.component";
@@ -34,43 +35,52 @@ const ProjectsPage = () => {
     <div className="page--projects">
       <Fade>
         <div className="heading">
-          <span className="heading__tag">02. Projects</span>
+          <p className="heading__tag">02. Projects</p>
           <h2 className="heading__main">Check Out My Work</h2>
         </div>
-        <div className="carousel">
-          <div className="carousel__prev">
-            <FontAwesomeIcon
-              className="arrow"
-              icon={["fas", "chevron-left"]}
-              size="lg"
-              onClick={handlePrev}
-            />
+        <MediaQuery minWidth={1200}>
+          <div className="carousel">
+            <div className="carousel__prev">
+              <FontAwesomeIcon
+                className="arrow"
+                icon={["fas", "chevron-left"]}
+                size="lg"
+                onClick={handlePrev}
+              />
+            </div>
+            <div className="carousel__project">
+              <Showcase key={id} {...props} />
+            </div>
+            <div className="carousel__next">
+              <FontAwesomeIcon
+                className="arrow"
+                icon={["fas", "chevron-right"]}
+                size="lg"
+                onClick={handleNext}
+              />
+            </div>
           </div>
-          <div className="carousel__project">
-            <Showcase key={id} {...props} />
+          <div className="indicators">
+            {projects.map(project => (
+              <div
+                key={project.id}
+                className={`indicators__indicator ${
+                  current === projects.indexOf(project) ? "current" : ""
+                }`}
+                onClick={() => {
+                  setCurrent(projects.indexOf(project));
+                }}
+              ></div>
+            ))}
           </div>
-          <div className="carousel__next">
-            <FontAwesomeIcon
-              className="arrow"
-              icon={["fas", "chevron-right"]}
-              size="lg"
-              onClick={handleNext}
-            />
+        </MediaQuery>
+        <MediaQuery maxWidth={1200}>
+          <div className="cards">
+            <div>Card Component</div>
+            <div>Card Component</div>
+            <div>Card Component</div>
           </div>
-        </div>
-        <div className="indicators">
-          {projects.map(project => (
-            <div
-              key={project.id}
-              className={`indicators__indicator ${
-                current === projects.indexOf(project) ? "current" : ""
-              }`}
-              onClick={() => {
-                setCurrent(projects.indexOf(project));
-              }}
-            ></div>
-          ))}
-        </div>
+        </MediaQuery>
         <div className="button__container">
           <Button
             onClick={() =>

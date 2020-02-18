@@ -42,6 +42,10 @@
   .header {
     padding: 0 25px;
     align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: $color-background;
 
     &__menu {
       display: flex;

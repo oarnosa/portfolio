@@ -31,6 +31,7 @@
 @media screen and (max-width: $breakpoint-laptop) {
   .page--contact {
     min-height: 100vh;
+    width: 100%;
     justify-content: center;
 
     .heading {
@@ -42,10 +43,17 @@
 
     .content {
       margin-bottom: 50px;
+      max-width: 600px;
 
       &__info {
         font-size: 14px;
       }
     }
+  }
+}
+
+@media screen and (max-height: 375px) {
+  .page--contact {
+    min-height: 550px;
   }
 }

@@ -86,9 +86,14 @@
   .page--about {
     display: flex;
     min-height: 125vh;
+    width: 100%;
     justify-content: center;
+    align-items: center;
 
     .heading {
+      width: 100%;
+      max-width: 600px;
+
       &__main {
         margin: 0 0 25px 0;
       }
@@ -114,5 +119,11 @@
         margin: 50px 25px 0 0;
       }
     }
+  }
+}
+
+@media screen and (max-height: 375px) {
+  .page--about {
+    min-height: 850px;
   }
 }

@@ -39,7 +39,9 @@ const HomePage = () => {
             </span>
           </h2>
         </section>
-        <Button onClick={handleOnClick}>Get to Know Me</Button>
+        <div className="button__container">
+          <Button onClick={handleOnClick}>Get to Know Me</Button>
+        </div>
       </Fade>
     </div>
   );
