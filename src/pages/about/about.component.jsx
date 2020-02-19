@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 import "./about.styles.scss";
 
 const AboutPage = () => (
-  <div className="page--about">
+  <div className="about--page">
     <Fade>
       <div className="heading">
         <p className="heading__tag">01. About</p>

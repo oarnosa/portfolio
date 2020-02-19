@@ -1,6 +1,6 @@
 @import "../../assets/styles/main";
 
-.page--projects {
+.projects--page {
   display: flex;
   flex-direction: column;
   max-width: 70%;
@@ -78,7 +78,7 @@
 }
 
 @media screen and (max-width: $breakpoint-laptop) {
-  .page--projects {
+  .projects--page {
     min-height: 200vh;
     width: 100%;
     max-width: 100%;

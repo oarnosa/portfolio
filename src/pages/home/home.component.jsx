@@ -15,7 +15,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="page--home">
+    <div className="home--page">
       <Fade>
         <section className="hero">
           <p className="hero__tag">Hey, my name is</p>

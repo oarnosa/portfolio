@@ -1,6 +1,6 @@
 @import "../../assets/styles/main";
 
-.page--about {
+.about--page {
   display: flex;
   flex-direction: column;
 
@@ -82,10 +82,23 @@
   }
 }
 
+@media screen and (max-width: $breakpoint-desktop) {
+  .about--page {
+    .about {
+      max-width: 750px;
+
+      &__container {
+        height: 300px;
+        width: 300px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: $breakpoint-laptop) {
-  .page--about {
+  .about--page {
     display: flex;
-    min-height: 125vh;
+    min-height: 150vh;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -113,6 +126,7 @@
       }
 
       &__container {
+        display: flex;
         position: relative;
         height: 225px;
         width: 225px;
@@ -123,7 +137,7 @@
 }
 
 @media screen and (max-height: 375px) {
-  .page--about {
+  .about--page {
     min-height: 850px;
   }
 }
