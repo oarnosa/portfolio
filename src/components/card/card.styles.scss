@@ -1,0 +1,57 @@
+@import "../../assets/styles/main";
+
+.card {
+  width: 100%;
+  max-width: 450px;
+  margin: 25px 0;
+  border-radius: 3px;
+  background-color: $color-tertiary;
+  box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+
+  .folder {
+    position: absolute;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    justify-content: space-evenly;
+    min-height: 350px;
+
+    &__heading {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+
+      &__title {
+        line-height: 1;
+      }
+
+      &__icon {
+        color: rgba($color-secondary, $alpha: 0.75);
+      }
+    }
+
+    &__description {
+      font-size: 14px;
+      opacity: 0.75;
+    }
+
+    &__skills {
+      @include accent;
+      width: 100%;
+
+      .skill {
+        padding-right: 10px;
+      }
+    }
+
+    &__links {
+      .link {
+        margin-right: 15px;
+      }
+    }
+  }
+}

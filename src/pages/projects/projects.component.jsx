@@ -3,22 +3,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MediaQuery from "react-responsive";
 import Fade from "react-reveal/Fade";
 
-import Showcase from "../../components/showcase/showcase.component";
 import Button from "../../components/button/button.component";
+import Showcase from "../../components/showcase/showcase.component";
+import Card from "../../components/card/card.component";
 
 import PROJECT_DATA from "./projects.data";
 
 import "./projects.styles.scss";
 
 const ProjectsPage = () => {
-  // declare hooks
+  const [projects] = useState(PROJECT_DATA);
   const [current, setCurrent] = useState(0);
 
-  // declare variables
-  const projects = PROJECT_DATA;
-  const { id, ...props } = projects[current];
-
-  // event handlers
   const handleNext = () => {
     let next = current + 1;
     if (next <= projects.length - 1) {
@@ -38,7 +34,7 @@ const ProjectsPage = () => {
           <p className="heading__tag">02. Projects</p>
           <h2 className="heading__main">Check Out My Work</h2>
         </div>
-        <MediaQuery minWidth={1200}>
+        <MediaQuery minWidth={951}>
           <div className="carousel">
             <div className="carousel__prev">
               <FontAwesomeIcon
@@ -49,7 +45,11 @@ const ProjectsPage = () => {
               />
             </div>
             <div className="carousel__project">
-              <Showcase key={id} {...props} />
+              {projects
+                .filter((project, index) => index === current)
+                .map(project => (
+                  <Showcase key={project.id} project={project} />
+                ))}
             </div>
             <div className="carousel__next">
               <FontAwesomeIcon
@@ -74,11 +74,11 @@ const ProjectsPage = () => {
             ))}
           </div>
         </MediaQuery>
-        <MediaQuery maxWidth={1200}>
+        <MediaQuery maxWidth={950}>
           <div className="cards">
-            <div>Card Component</div>
-            <div>Card Component</div>
-            <div>Card Component</div>
+            {projects.map(project => (
+              <Card key={project.id} project={project} />
+            ))}
           </div>
         </MediaQuery>
         <div className="button__container">

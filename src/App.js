@@ -15,7 +15,7 @@ import {
   faChevronRight,
   faBars
 } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faEnvelope, faFolderOpen } from "@fortawesome/free-regular-svg-icons";
 
 import Header from "./components/header/header.component";
 import Social from "./components/social/social.component";
@@ -38,14 +38,15 @@ library.add(
   faChevronLeft,
   faChevronRight,
   faEnvelope,
-  faBars
+  faBars,
+  faFolderOpen
 );
 
 const App = () => (
   <Router>
     <Header />
     {/* laptop & desktop view */}
-    <MediaQuery minWidth={950}>
+    <MediaQuery minWidth={951}>
       <Switch>
         <Suspense fallback={<Spinner />}>
           <div className="wrapper">
