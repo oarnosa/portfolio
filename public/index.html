@@ -39,7 +39,7 @@
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", function() {
           navigator.serviceWorker
-            .register("worker.js")
+            .register("./serviceWorker.js")
             .then(
               function(registration) {
                 console.log(
