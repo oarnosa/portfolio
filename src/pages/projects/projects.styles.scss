@@ -8,7 +8,7 @@
 
   .heading {
     margin-left: 5%;
-    text-align: center;
+    text-align: start;
 
     &__tag {
       @include accent;
@@ -90,6 +90,7 @@
       margin-left: 0;
       width: 100%;
       max-width: 600px;
+      text-align: center;
 
       &__main {
         font-weight: 700;
