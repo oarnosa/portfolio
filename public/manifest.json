@@ -1,8 +1,15 @@
 {
   "short_name": "Portfolio",
   "name": "Orlando Arnosa Portfolio",
+  "icons": [
+    {
+      "src": "/images/logo_light",
+      "type": "image/svg",
+      "sizes": "512x512"
+    }
+  ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "rgba(239, 241, 245, 1)",
+  "background_color": "rgba(24, 28, 39, 1)"
 }

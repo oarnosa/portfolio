@@ -17,13 +17,14 @@
     flex-direction: column;
     padding: 25px;
     justify-content: space-evenly;
-    min-height: 350px;
+    min-height: 300px;
 
     &__heading {
       display: flex;
       width: 100%;
       align-items: center;
       justify-content: space-between;
+      padding-right: 20px;
 
       &__title {
         line-height: 1;
