@@ -3,6 +3,7 @@
 .about--page {
   display: flex;
   flex-direction: column;
+  padding: 150px 0;
 
   .heading {
     text-align: start;
@@ -98,7 +99,7 @@
 @media screen and (max-width: $breakpoint-laptop) {
   .about--page {
     display: flex;
-    min-height: 125vh;
+    min-height: 100vh;
     width: 100%;
     justify-content: center;
     align-items: center;

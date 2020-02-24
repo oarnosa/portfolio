@@ -5,6 +5,7 @@
   flex-direction: column;
   width: 100%;
   margin-left: 20%;
+  padding: 150px 0;
 
   .hero {
     margin-bottom: 38px;
@@ -31,7 +32,6 @@
 @media screen and (max-width: $breakpoint-desktop) {
   .home--page {
     margin-left: 5%;
-    max-width: 700px;
   }
 }
 

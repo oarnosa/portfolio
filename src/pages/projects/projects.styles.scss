@@ -4,10 +4,11 @@
   display: flex;
   flex-direction: column;
   max-width: 70%;
+  padding: 150px 0;
 
   .heading {
     margin-left: 5%;
-    text-align: start;
+    text-align: center;
 
     &__tag {
       @include accent;
@@ -79,7 +80,7 @@
 
 @media screen and (max-width: $breakpoint-laptop) {
   .projects--page {
-    min-height: 175vh;
+    min-height: 100vh;
     width: 100%;
     max-width: 100%;
     justify-content: center;
