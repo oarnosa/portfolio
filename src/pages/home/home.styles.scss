@@ -31,7 +31,19 @@
 
 @media screen and (max-width: $breakpoint-desktop) {
   .home--page {
-    margin-left: 5%;
+    margin-left: 15%;
+
+    .hero {
+      &__main {
+        font-size: 62px;
+        line-height: 78px;
+      }
+
+      &__sub {
+        font-size: 62px;
+        line-height: 78px;
+      }
+    }
   }
 }
 
