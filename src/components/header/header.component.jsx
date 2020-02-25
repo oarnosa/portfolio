@@ -11,10 +11,8 @@ import Menu from "../menu/menu.component";
 import "./header.styles.scss";
 
 const Header = () => {
-  // declare hooks
   const [show, setShow] = useState(false);
 
-  // event handlers
   const toggleMenu = () => {
     setShow(!show);
   };
@@ -56,7 +54,7 @@ const Header = () => {
       </div>
       <MediaQuery maxWidth={950}>
         <Slide top when={show}>
-          <Menu />
+          <Menu show={show} />
         </Slide>
       </MediaQuery>
     </div>

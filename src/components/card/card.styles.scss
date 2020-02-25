@@ -15,7 +15,9 @@
   .color-overlay {
     height: 100%;
     width: 100%;
-    background-color: rgba($color-background-secondary, $alpha: 0.8);
+    opacity: 0.75;
+    background-color: $color-background-secondary;
+    border-radius: inherit;
     position: absolute;
     z-index: 1;
   }
