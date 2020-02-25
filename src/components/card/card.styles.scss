@@ -3,7 +3,7 @@
 .card {
   display: flex;
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
   margin: 25px 0;
   border-radius: 3px;
   background-size: cover;
@@ -15,7 +15,7 @@
   .color-overlay {
     height: 100%;
     width: 100%;
-    background-color: rgba($color-background-secondary, $alpha: 0.85);
+    background-color: rgba($color-background-secondary, $alpha: 0.75);
     position: absolute;
     z-index: 1;
   }
@@ -30,6 +30,7 @@
     z-index: 10;
 
     &__title {
+      font-size: 24px;
       line-height: 1;
     }
 
