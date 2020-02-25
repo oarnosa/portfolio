@@ -1,0 +1,25 @@
+@import "../../assets/styles/main";
+
+.menu {
+  height: 65px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background-color: $color-tertiary;
+  padding: 0 25px;
+
+  &__options {
+    display: flex;
+    justify-content: space-around;
+
+    &__option {
+      cursor: pointer;
+
+      &__code {
+        @include accent;
+      }
+    }
+  }
+}

@@ -22,7 +22,12 @@ const Showcase = ({ project }) => {
           <img className="showcase__container__image" src={imageUrl} alt="" />
         </div>
         <div className="showcase__content">
-          <h3 className="showcase__content__title">{title}</h3>
+          <h3
+            className="showcase__content__title"
+            onClick={() => window.open(`${previewUrl}`)}
+          >
+            {title}
+          </h3>
           <div className="showcase__content__description">{description}</div>
           <div className="showcase__content__skills">
             {skills.map((skill, index) => (
