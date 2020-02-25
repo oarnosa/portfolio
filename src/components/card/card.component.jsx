@@ -9,6 +9,7 @@ const Card = ({ project }) => {
     title,
     description,
     skills,
+    imageUrl,
     githubUrl,
     serverUrl,
     previewUrl
@@ -16,17 +17,15 @@ const Card = ({ project }) => {
 
   return (
     <Fade>
-      <div className="card">
+      <div className="card" style={{ backgroundImage: `url(${imageUrl})` }}>
+        <div className="color-overlay"></div>
         <div className="content">
-          <div className="content__heading">
-            <h3 className="content__heading__title">{title}</h3>
-            <FontAwesomeIcon
-              className="content__heading__icon"
-              icon={["far", "folder-open"]}
-              size="2x"
-              onClick={() => window.open(`${previewUrl}`)}
-            />
-          </div>
+          <h3
+            className="content__title"
+            onClick={() => window.open(`${previewUrl}`)}
+          >
+            {title}
+          </h3>
           <p className="content__description">{description}</p>
           <p className="content__skills">
             {skills.map((skill, index) => (
