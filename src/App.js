@@ -44,36 +44,33 @@ library.add(
 
 const App = () => (
   <Router>
+    <Header />
     {/* laptop & desktop view */}
     <MediaQuery minWidth={951}>
       <Switch>
         <Suspense fallback={<Spinner />}>
-          <Header />
           <div className="wrapper">
             <Route path="/" exact component={HomePage} />
             <Route path="/about" component={AboutPage} />
             <Route path="/projects" component={ProjectsPage} />
             <Route path="/contact" component={ContactPage} />
           </div>
-          <Footer />
         </Suspense>
       </Switch>
       <Social />
     </MediaQuery>
-
     {/* mobile & tablet view */}
     <MediaQuery maxWidth={950}>
       <Suspense fallback={<Spinner />}>
-        <Header />
         <div className="wrapper">
           <HomePage />
           <AboutPage />
           <ProjectsPage />
           <ContactPage />
         </div>
-        <Footer />
       </Suspense>
     </MediaQuery>
+    <Footer />
   </Router>
 );
 
