@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 
 import Slide from "react-reveal/Slide";
+import MediaQuery from "react-responsive";
 import Button from "../button/button.component";
 import Menu from "../menu/menu.component";
 
@@ -53,9 +54,11 @@ const Header = () => {
           onClick={toggleMenu}
         />
       </div>
-      <Slide top when={show}>
-        <Menu />
-      </Slide>
+      <MediaQuery maxWidth={950}>
+        <Slide top when={show}>
+          <Menu />
+        </Slide>
+      </MediaQuery>
     </div>
   );
 };
