@@ -28,7 +28,8 @@
   }
 
   &__url {
-    @include accent--small;
+    @include accent;
+    font-size: 13px;
     transition: ease-in-out 0.25s;
     margin-left: 15px;
     opacity: 0;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 
@@ -20,9 +21,23 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header__container">
-        <Link className="brand__logo" to="/" aria-label="Brand Logo">
-          <Logo />
-        </Link>
+        <MediaQuery minWidth={951}>
+          <Link className="brand__logo" aria-label="Brand Logo" to="/">
+            <Logo />
+          </Link>
+        </MediaQuery>
+        <MediaQuery maxWidth={950}>
+          <ScrollLink
+            className="brand__logo"
+            aria-label="Brand Logo"
+            to="home"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            <Logo />
+          </ScrollLink>
+        </MediaQuery>
         <div className="header__options">
           <Link className="header__options__option" to="/about">
             <span className="header__options__option__code">01.</span>About

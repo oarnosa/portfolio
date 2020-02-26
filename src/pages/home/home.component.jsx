@@ -1,5 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+import MediaQuery from "react-responsive";
 import TextLoop from "react-text-loop";
 import Fade from "react-reveal/Fade";
 
@@ -15,7 +17,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="home--page">
+    <div id="home">
       <Fade>
         <section className="hero">
           <p className="hero__tag">Hey, my name is</p>
@@ -40,7 +42,22 @@ const HomePage = () => {
           </h2>
         </section>
         <div className="button__container">
-          <Button onClick={handleOnClick}>Get to Know Me</Button>
+          <MediaQuery minWidth={951}>
+            <Button onClick={handleOnClick}>Get to Know Me</Button>
+          </MediaQuery>
+          <MediaQuery maxWidth={950}>
+            <Button>
+              <ScrollLink
+                className="button__text"
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                Get to Know Me
+              </ScrollLink>
+            </Button>
+          </MediaQuery>
         </div>
       </Fade>
     </div>

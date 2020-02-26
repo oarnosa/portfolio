@@ -1,5 +1,10 @@
 import React, { lazy, Suspense } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect
+} from "react-router-dom";
 import MediaQuery from "react-responsive";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -25,10 +30,10 @@ import Footer from "./components/footer/footer.component";
 
 import "./App.scss";
 
-const HomePage = lazy(() => import("./pages/home/home.component"));
-const AboutPage = lazy(() => import("./pages/about/about.component"));
-const ProjectsPage = lazy(() => import("./pages/projects/projects.component"));
-const ContactPage = lazy(() => import("./pages/contact/contact.component"));
+const Home = lazy(() => import("./pages/home/home.component"));
+const About = lazy(() => import("./pages/about/about.component"));
+const Projects = lazy(() => import("./pages/projects/projects.component"));
+const Contact = lazy(() => import("./pages/contact/contact.component"));
 
 library.add(
   faGithub,
@@ -51,23 +56,26 @@ const App = () => (
       <Switch>
         <Suspense fallback={<Spinner />}>
           <div className="wrapper">
-            <Route path="/" exact component={HomePage} />
-            <Route path="/about" component={AboutPage} />
-            <Route path="/projects" component={ProjectsPage} />
-            <Route path="/contact" component={ContactPage} />
+            <Route path="/" exact component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/projects" component={Projects} />
+            <Route path="/contact" component={Contact} />
+            <Route render={() => <Redirect to={{ pathname: "/" }} />} />
           </div>
         </Suspense>
       </Switch>
-      <Social />
+      <MediaQuery minWidth={1250}>
+        <Social />
+      </MediaQuery>
     </MediaQuery>
     {/* mobile & tablet view */}
     <MediaQuery maxWidth={950}>
       <Suspense fallback={<Spinner />}>
         <div className="wrapper">
-          <HomePage />
-          <AboutPage />
-          <ProjectsPage />
-          <ContactPage />
+          <Home />
+          <About />
+          <Projects />
+          <Contact />
         </div>
       </Suspense>
     </MediaQuery>

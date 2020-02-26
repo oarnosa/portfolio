@@ -6,7 +6,7 @@ import Button from "../../components/button/button.component";
 import "./contact.styles.scss";
 
 const ContactPage = () => (
-  <div className="contact--page">
+  <div id="contact">
     <Fade>
       <div className="heading">
         <p className="heading__tag">03. What's Next?</p>

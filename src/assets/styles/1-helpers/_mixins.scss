@@ -5,14 +5,3 @@
   font-family: $font-secondary;
   font-weight: 400;
 }
-
-@mixin accent--small {
-  @include accent;
-  font-size: 13px;
-  line-height: 27px;
-}
-
-@mixin sub {
-  color: $color-primary;
-  font-family: $font-secondary;
-}

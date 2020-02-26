@@ -57,3 +57,11 @@
     }
   }
 }
+
+@media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-laptop) {
+  .card {
+    .content {
+      padding: 60px;
+    }
+  }
+}

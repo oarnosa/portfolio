@@ -1,10 +1,10 @@
 @import "../../assets/styles/main";
 
-.home--page {
+#home {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-left: 17.5%;
+  margin-left: 15%;
   padding: 150px 0;
 
   .hero {
@@ -30,8 +30,8 @@
 }
 
 @media screen and (max-width: $breakpoint-desktop) {
-  .home--page {
-    margin-left: 12.5%;
+  #home {
+    margin-left: 10%;
 
     .hero {
       &__main {
@@ -48,7 +48,7 @@
 }
 
 @media screen and (max-width: $breakpoint-laptop) {
-  .home--page {
+  #home {
     display: flex;
     min-height: 100vh;
     align-items: center;
@@ -82,12 +82,17 @@
       width: 100%;
       max-width: 600px;
       justify-self: start;
+
+      .button__text {
+        font-size: 14px;
+        line-height: 0;
+      }
     }
   }
 }
 
 @media screen and (max-height: 375px) {
-  .home--page {
+  #home {
     min-height: 550px;
   }
 }

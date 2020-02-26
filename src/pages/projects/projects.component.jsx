@@ -28,7 +28,7 @@ const ProjectsPage = () => {
   };
 
   return (
-    <div className="projects--page">
+    <div id="projects">
       <Fade>
         <div className="heading">
           <p className="heading__tag">02. Projects</p>

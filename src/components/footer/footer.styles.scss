@@ -28,7 +28,7 @@
   }
 }
 
-@media screen and (max-width: $breakpoint-laptop) {
+@media screen and (max-width: $breakpoint-desktop) {
   .footer {
     flex-direction: column;
     justify-content: space-evenly;
