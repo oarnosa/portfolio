@@ -22,14 +22,37 @@ const Header = () => {
     <div className="header">
       <div className="header__container">
         <MediaQuery minWidth={951}>
-          <Link className="brand__logo" aria-label="Brand Logo" to="/">
+          <Link className="header__logo" aria-label="Header Logo" to="/">
             <Logo />
           </Link>
+          <div className="header__options">
+            <Link className="header__option" to="/about">
+              <span className="header__option--special">01.</span>About
+            </Link>
+            <Link className="header__option" to="/projects">
+              <span className="header__option--special">02.</span>Projects
+            </Link>
+            <Link className="header__option" to="/contact">
+              <span className="header__option--special">03.</span>Contact
+            </Link>
+            <div className="header__button">
+              <Button
+                small
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/file/d/1UO2qD8b0FMwuggKP3qBBtU2AsHCNGqKn/view"
+                  )
+                }
+              >
+                Resume
+              </Button>
+            </div>
+          </div>
         </MediaQuery>
         <MediaQuery maxWidth={950}>
           <ScrollLink
-            className="brand__logo"
-            aria-label="Brand Logo"
+            className="header__logo"
+            aria-label="Header Logo"
             to="home"
             spy={true}
             smooth={true}
@@ -37,35 +60,13 @@ const Header = () => {
           >
             <Logo />
           </ScrollLink>
+          <FontAwesomeIcon
+            className="header__toggle"
+            icon={["fas", "bars"]}
+            size="2x"
+            onClick={toggleMenu}
+          />
         </MediaQuery>
-        <div className="header__options">
-          <Link className="header__options__option" to="/about">
-            <span className="header__options__option__code">01.</span>About
-          </Link>
-          <Link className="header__options__option" to="/projects">
-            <span className="header__options__option__code">02.</span>Projects
-          </Link>
-          <Link className="header__options__option" to="/contact">
-            <span className="header__options__option__code">03.</span>Contact
-          </Link>
-          <Button
-            small
-            style={{ marginLeft: "15px" }}
-            onClick={() =>
-              window.open(
-                "https://drive.google.com/file/d/1UO2qD8b0FMwuggKP3qBBtU2AsHCNGqKn/view"
-              )
-            }
-          >
-            Resume
-          </Button>
-        </div>
-        <FontAwesomeIcon
-          className="header__toggle"
-          icon={["fas", "bars"]}
-          size="2x"
-          onClick={toggleMenu}
-        />
       </div>
       <MediaQuery maxWidth={950}>
         <Slide top when={show}>

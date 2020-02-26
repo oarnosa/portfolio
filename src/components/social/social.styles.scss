@@ -14,6 +14,18 @@
     transition: ease-in-out 0.25s;
     opacity: 0.75;
 
+    .social__icon {
+      cursor: pointer;
+    }
+
+    .social__url {
+      @include accent;
+      font-size: 13px;
+      transition: ease-in-out 0.25s;
+      margin-left: 15px;
+      opacity: 0;
+    }
+
     &:hover {
       opacity: 1;
 
@@ -21,18 +33,6 @@
         opacity: 1;
       }
     }
-  }
-
-  &__icon {
-    cursor: pointer;
-  }
-
-  &__url {
-    @include accent;
-    font-size: 13px;
-    transition: ease-in-out 0.25s;
-    margin-left: 15px;
-    opacity: 0;
   }
 
   &__decoration {

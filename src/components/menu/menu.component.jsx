@@ -5,36 +5,33 @@ import "./menu.styles.scss";
 
 const Menu = () => (
   <div className="menu">
-    <div className="menu__options">
-      <ScrollLink
-        className="menu__options__option"
-        to="about"
-        spy={true}
-        smooth={true}
-        duration={500}
-      >
-        <span className="menu__options__option__code">01.</span> About
-      </ScrollLink>
-      <ScrollLink
-        className="menu__options__option"
-        to="projects"
-        spy={true}
-        smooth={true}
-        duration={500}
-      >
-        <span className="menu__options__option__code">02.</span> Projects
-      </ScrollLink>
-      <ScrollLink
-        className="menu__options__option"
-        to="contact"
-        spy={true}
-        smooth={true}
-        offset={100}
-        duration={500}
-      >
-        <span className="menu__options__option__code">03.</span> Contact
-      </ScrollLink>
-    </div>
+    <ScrollLink
+      className="menu__option"
+      to="about"
+      spy={true}
+      smooth={true}
+      duration={500}
+    >
+      <span className="menu__option--special">01.</span> About
+    </ScrollLink>
+    <ScrollLink
+      className="menu__option"
+      to="projects"
+      spy={true}
+      smooth={true}
+      duration={500}
+    >
+      <span className="menu__option--special">02.</span> Projects
+    </ScrollLink>
+    <ScrollLink
+      className="menu__option"
+      to="contact"
+      spy={true}
+      smooth={true}
+      duration={500}
+    >
+      <span className="menu__option--special">03.</span> Contact
+    </ScrollLink>
   </div>
 );
 

@@ -9,25 +9,25 @@ const Footer = () => (
     <MediaQuery maxWidth={1250}>
       <div className="footer__icons">
         <FontAwesomeIcon
-          className="footer__icons__icon"
+          className="footer__icon"
           icon={["fab", "github"]}
           size="2x"
           onClick={() => window.open("https://github.com/oarnosa")}
         />
         <FontAwesomeIcon
-          className="footer__icons__icon"
+          className="footer__icon"
           icon={["fab", "linkedin-in"]}
           size="2x"
           onClick={() => window.open("https://www.linkedin.com/in/oarnosa")}
         />
         <FontAwesomeIcon
-          className="footer__icons__icon"
+          className="footer__icon"
           icon={["fab", "instagram"]}
           size="2x"
           onClick={() => window.open("https://instagram.com/arno_lando")}
         />
         <FontAwesomeIcon
-          className="footer__icons__icon"
+          className="footer__icon"
           icon={["fas", "list"]}
           size="2x"
           onClick={() =>
@@ -44,7 +44,7 @@ const Footer = () => (
     <p className="footer__info">
       Email:{" "}
       <span
-        className="footer__info__special"
+        className="footer__info--special"
         onClick={() => (window.location.href = "mailto:oarnosa@gmail.com")}
       >
         oarnosa@gmail.com

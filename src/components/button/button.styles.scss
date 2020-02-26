@@ -3,20 +3,20 @@
 .button {
   cursor: pointer;
   padding: 20px 28px;
+  color: $color-secondary;
   font-size: 14px;
   font-family: $font-secondary;
-  border-radius: 3px;
   border: 1px solid $color-secondary;
-  color: $color-secondary;
+  border-radius: 3px;
   transition: ease-in-out 0.25s;
+
+  &--small {
+    max-width: 85px;
+    padding: 12px 18px;
+    font-size: 13px;
+  }
 
   &:hover {
     background-color: rgba($color-secondary, $alpha: 0.2);
-  }
-
-  &.small {
-    font-size: 13px;
-    padding: 12px 18px;
-    max-width: 85px;
   }
 }

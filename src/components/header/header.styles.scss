@@ -15,7 +15,7 @@
     height: 100%;
     width: 100%;
 
-    .brand__logo {
+    .header__logo {
       height: 50px;
       width: 50px;
     }
@@ -24,20 +24,24 @@
       display: flex;
       align-items: center;
 
-      &__option {
+      .header__option {
         margin: 0 15px;
         font-family: $font-secondary;
         transition: ease-in-out 0.25s;
 
-        &:hover {
-          color: $color-secondary;
-        }
-
-        &__code {
+        &--special {
           @include accent;
           padding-right: 10px;
         }
+
+        &:hover {
+          color: $color-secondary;
+        }
       }
+    }
+
+    .header__button {
+      margin-left: 15px;
     }
 
     .header__toggle {

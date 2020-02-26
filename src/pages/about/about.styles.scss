@@ -1,74 +1,63 @@
 @import "../../assets/styles/main";
 
-#about {
+.about {
   display: flex;
   flex-direction: column;
   padding: 150px 0;
 
-  .heading {
+  &__heading {
     text-align: start;
+    font-weight: 700;
 
-    &__tag {
+    .about__kicker {
       @include accent;
-    }
-
-    &__main {
-      font-weight: 700;
     }
   }
 
-  .about {
+  &__section {
     display: flex;
     align-items: center;
 
-    &__content {
+    .about__content {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
 
-      &__info {
+      .about__info {
         opacity: 0.75;
         max-width: 600px;
         padding-bottom: 10px;
 
-        &__special {
+        &--special {
           cursor: pointer;
           color: $color-secondary;
           font-weight: 500;
         }
       }
 
-      &__skillset {
+      .about__skills {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
         list-style: inside square;
-
-        &__skill {
-          @include accent;
-        }
+        @include accent;
       }
     }
 
-    &__container {
+    .about__container {
       height: 325px;
       width: 325px;
       margin-left: 50px;
       position: relative;
 
-      &:hover .about__container__decoration {
-        top: 15px;
-        left: 15px;
-      }
-
-      &__image {
+      .about__image {
         position: absolute;
         border-radius: 3px;
         z-index: 10;
         box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
       }
 
-      &__decoration {
+      .about__decoration {
         height: inherit;
         width: inherit;
         position: absolute;
@@ -79,54 +68,52 @@
         transition: ease-in-out 0.25s;
         border: 5px solid $color-secondary;
       }
-    }
-  }
-}
 
-@media screen and (max-width: $breakpoint-desktop) {
-  #about {
-    .about {
-      max-width: 750px;
-
-      &__container {
-        height: 300px;
-        width: 300px;
+      &:hover .about__decoration {
+        top: 15px;
+        left: 15px;
       }
     }
   }
 }
 
+@media screen and (min-width: $breakpoint-laptop) and (max-width: $breakpoint-desktop) {
+  .about__section {
+    max-width: 750px;
+
+    .about__container {
+      height: 300px;
+      width: 300px;
+    }
+  }
+}
+
 @media screen and (max-width: $breakpoint-laptop) {
-  #about {
+  .about {
     display: flex;
     min-height: 100vh;
     width: 100%;
     justify-content: center;
     align-items: center;
 
-    .heading {
+    &__heading {
       width: 100%;
       max-width: 600px;
-
-      &__main {
-        margin: 0 0 25px 0;
-      }
+      margin: 0 0 25px 0;
     }
 
-    .about {
+    &__section {
       flex-direction: column;
 
-      &__content {
-        &__info {
-          font-size: 14px;
-        }
-
-        &__skillset {
-          column-gap: 20px;
-        }
+      .about__info {
+        font-size: 14px;
       }
 
-      &__container {
+      .about__skills {
+        column-gap: 20px;
+      }
+
+      .about__container {
         display: flex;
         position: relative;
         height: 225px;
@@ -134,11 +121,5 @@
         margin: 50px 25px 0 0;
       }
     }
-  }
-}
-
-@media screen and (max-height: 375px) {
-  #about {
-    min-height: 850px;
   }
 }

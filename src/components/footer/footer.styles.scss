@@ -15,7 +15,7 @@
   &__info {
     padding: 0 50px 0;
 
-    &__special {
+    &--special {
       cursor: pointer;
       color: $color-primary;
       opacity: 0.75;
@@ -38,7 +38,7 @@
       display: flex;
       align-items: center;
 
-      &__icon {
+      .footer__icon {
         margin: 0 25px;
       }
     }
