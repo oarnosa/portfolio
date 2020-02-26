@@ -54,7 +54,7 @@ const Header = () => {
       </div>
       <MediaQuery maxWidth={950}>
         <Slide top when={show}>
-          <Menu show={show} />
+          <Menu />
         </Slide>
       </MediaQuery>
     </div>

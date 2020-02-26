@@ -28,9 +28,13 @@ const Footer = () => (
         />
         <FontAwesomeIcon
           className="footer__icons__icon"
-          icon={["far", "envelope"]}
+          icon={["fas", "list"]}
           size="2x"
-          onClick={() => (window.location.href = "mailto:oarnosa@gmail.com")}
+          onClick={() =>
+            window.open(
+              "https://drive.google.com/file/d/1UO2qD8b0FMwuggKP3qBBtU2AsHCNGqKn/view"
+            )
+          }
         />
       </div>
     </MediaQuery>

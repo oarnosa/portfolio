@@ -13,9 +13,10 @@ import {
   faExternalLinkAlt,
   faChevronLeft,
   faChevronRight,
-  faBars
+  faBars,
+  faList
 } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope, faFolderOpen } from "@fortawesome/free-regular-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 import Header from "./components/header/header.component";
 import Social from "./components/social/social.component";
@@ -39,7 +40,7 @@ library.add(
   faChevronRight,
   faEnvelope,
   faBars,
-  faFolderOpen
+  faList
 );
 
 const App = () => (
