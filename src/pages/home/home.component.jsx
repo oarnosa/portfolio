@@ -17,14 +17,14 @@ const HomePage = () => {
   };
 
   return (
-    <div id="home">
+    <div className="home" id="home">
       <Fade>
-        <section className="hero">
-          <p className="hero__tag">Hey, my name is</p>
-          <h1 className="hero__main">Orlando Arnosa.</h1>
-          <h2 className="hero__sub">
-            <span className="hero__sub__text">I am a </span>
-            <span className="hero__sub__text">
+        <section className="home__hero">
+          <p className="home__kicker">Hey, my name is</p>
+          <h1 className="home__headline">Orlando Arnosa.</h1>
+          <h2 className="home__sub">
+            <span className="home__sub__text">I am a </span>
+            <span className="home__sub__text">
               <TextLoop
                 children={[
                   "full-stack developer",
@@ -41,14 +41,14 @@ const HomePage = () => {
             </span>
           </h2>
         </section>
-        <div className="button__container">
+        <div className="home__button">
           <MediaQuery minWidth={951}>
             <Button onClick={handleOnClick}>Get to Know Me</Button>
           </MediaQuery>
           <MediaQuery maxWidth={950}>
             <Button>
               <ScrollLink
-                className="button__text"
+                className="home__button__text"
                 to="about"
                 spy={true}
                 smooth={true}

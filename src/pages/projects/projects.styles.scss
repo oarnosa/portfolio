@@ -1,26 +1,22 @@
 @import "../../assets/styles/main";
 
-#projects {
+.projects {
   display: flex;
   flex-direction: column;
-  max-width: 70%;
+  max-width: 80%;
   padding: 150px 0;
 
-  .heading {
-    margin-left: 5%;
+  &__heading {
     text-align: start;
-
-    &__tag {
-      @include accent;
-    }
-
-    &__main {
-      font-weight: 700;
-      margin-bottom: 19px;
-    }
+    font-weight: 700;
+    margin: 0 0 19px 5%;
   }
 
-  .carousel {
+  &__kicker {
+    @include accent;
+  }
+
+  &__carousel {
     display: grid;
     grid-template-columns: 5% 1fr 5%;
     overflow: hidden;
@@ -38,39 +34,40 @@
     }
   }
 
-  .arrow {
+  &__arrow {
     cursor: pointer;
     opacity: 0.5;
     transition: ease-in-out 0.25s;
+
     &:hover {
       opacity: 1;
     }
   }
 
-  .indicators {
+  &__indicators {
     display: flex;
     margin-top: 28px;
     justify-content: center;
+  }
 
-    &__indicator {
-      cursor: pointer;
-      height: 6px;
-      width: 24px;
-      margin: 0 6px;
-      transition: ease-in-out 0.25s;
-      background-color: rgba($color-primary, $alpha: 0.2);
+  &__indicator {
+    cursor: pointer;
+    height: 6px;
+    width: 24px;
+    margin: 0 6px;
+    transition: ease-in-out 0.25s;
+    background-color: rgba($color-primary, $alpha: 0.2);
 
-      &:hover {
-        background-color: rgba($color-primary, $alpha: 0.5);
-      }
+    &:hover {
+      background-color: rgba($color-primary, $alpha: 0.5);
+    }
 
-      &.current {
-        background-color: rgba($color-primary, $alpha: 1);
-      }
+    &--current {
+      background-color: rgba($color-primary, $alpha: 1);
     }
   }
 
-  .button__container {
+  &__button {
     display: flex;
     justify-content: center;
     margin-top: 28px;
@@ -78,25 +75,20 @@
 }
 
 @media screen and (max-width: $breakpoint-laptop) {
-  #projects {
+  .projects {
     min-height: 100vh;
     width: 100%;
     max-width: 100%;
     justify-content: center;
     align-items: center;
 
-    .heading {
-      margin-left: 0;
+    &__heading {
       width: 100%;
       max-width: 600px;
-
-      &__main {
-        font-weight: 700;
-        margin-bottom: 25px;
-      }
+      margin: 0;
     }
 
-    .button__container {
+    &__button {
       margin-top: 25px;
     }
   }

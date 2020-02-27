@@ -6,7 +6,7 @@ import "./footer.styles.scss";
 
 const Footer = () => (
   <div className="footer">
-    <MediaQuery maxWidth={1250}>
+    <MediaQuery maxWidth={950}>
       <div className="footer__icons">
         <FontAwesomeIcon
           className="footer__icon"

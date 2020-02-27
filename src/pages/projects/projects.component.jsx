@@ -28,44 +28,46 @@ const ProjectsPage = () => {
   };
 
   return (
-    <div id="projects">
+    <div className="projects" id="projects">
       <Fade>
-        <div className="heading">
-          <p className="heading__tag">02. Projects</p>
-          <h2 className="heading__main">Check Out My Work</h2>
+        <div className="projects__heading">
+          <p className="projects__kicker">02. Projects</p>
+          <h2 className="projects__headline">Check Out My Work</h2>
         </div>
         <MediaQuery minWidth={951}>
-          <div className="carousel">
-            <div className="carousel__prev">
+          <div className="projects__carousel">
+            <div className="projects__carousel__prev">
               <FontAwesomeIcon
-                className="arrow"
+                className="projects__arrow"
                 icon={["fas", "chevron-left"]}
                 size="lg"
                 onClick={handlePrev}
               />
             </div>
-            <div className="carousel__project">
+            <div className="projects__carousel__project">
               {projects
                 .filter((project, index) => index === current)
                 .map(project => (
                   <Showcase key={project.id} project={project} />
                 ))}
             </div>
-            <div className="carousel__next">
+            <div className="projects__carousel__next">
               <FontAwesomeIcon
-                className="arrow"
+                className="projects__arrow"
                 icon={["fas", "chevron-right"]}
                 size="lg"
                 onClick={handleNext}
               />
             </div>
           </div>
-          <div className="indicators">
+          <div className="projects__indicators">
             {projects.map(project => (
               <div
                 key={project.id}
-                className={`indicators__indicator ${
-                  current === projects.indexOf(project) ? "current" : ""
+                className={`projects__indicator ${
+                  current === projects.indexOf(project)
+                    ? "projects__indicator--current"
+                    : ""
                 }`}
                 onClick={() => {
                   setCurrent(projects.indexOf(project));
@@ -75,13 +77,13 @@ const ProjectsPage = () => {
           </div>
         </MediaQuery>
         <MediaQuery maxWidth={950}>
-          <div className="cards">
+          <div className="projects__cards">
             {projects.map(project => (
               <Card key={project.id} project={project} />
             ))}
           </div>
         </MediaQuery>
-        <div className="button__container">
+        <div className="projects__button">
           <Button
             onClick={() =>
               window.open("https://github.com/oarnosa?tab=repositories")

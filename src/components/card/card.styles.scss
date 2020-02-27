@@ -3,7 +3,7 @@
 .card {
   display: flex;
   width: 100%;
-  max-width: 600px;
+  max-width: 525px;
   margin: 25px 0;
   border-radius: 3px;
   background-size: cover;
@@ -27,33 +27,45 @@
     flex-direction: column;
     padding: 25px;
     justify-content: space-evenly;
-    min-height: 350px;
+    min-height: 300px;
     font-weight: 500;
     z-index: 10;
+  }
 
-    .card__title {
-      font-size: 24px;
-      line-height: 1;
-    }
+  &__title {
+    font-size: 24px;
+    line-height: 1;
+  }
 
-    .card__description {
-      font-size: 14px;
-      opacity: 0.75;
-    }
+  &__description {
+    font-size: 14px;
+    opacity: 0.75;
+  }
 
-    .card__skill {
-      @include accent;
-      padding-right: 10px;
-    }
+  &__skill {
+    @include accent;
+    padding-right: 10px;
+  }
 
-    .card__link {
-      margin-right: 15px;
-    }
+  &__link {
+    margin-right: 15px;
   }
 }
 
-@media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-laptop) {
+@media screen and (max-width: $breakpoint-laptop) {
   .card__content {
     padding: 50px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-tablet) {
+  .card__content {
+    padding: 35px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+  .card__content {
+    padding: 25px;
   }
 }
