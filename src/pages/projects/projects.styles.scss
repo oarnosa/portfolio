@@ -3,7 +3,7 @@
 .projects {
   display: flex;
   flex-direction: column;
-  max-width: 80%;
+  max-width: 70%;
   padding: 150px 0;
 
   &__heading {
@@ -71,6 +71,12 @@
     display: flex;
     justify-content: center;
     margin-top: 28px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-desktop) {
+  .about {
+    max-width: 80%;
   }
 }
 

@@ -9,7 +9,7 @@
   &__container {
     padding-bottom: 56.25%;
     position: relative;
-    grid-column: 1 /8;
+    grid-column: 1/8;
     grid-row: 1/3;
     z-index: 1;
   }
@@ -80,5 +80,18 @@
     flex-direction: column;
     grid-column: 6/-1;
     grid-row: 1/3;
+  }
+
+  .showcase__title {
+    font-size: 24px;
+  }
+
+  .showcase__description {
+    font-size: 14px;
+  }
+
+  .showcase__skill {
+    font-size: 13px;
+    padding-left: 15px;
   }
 }
