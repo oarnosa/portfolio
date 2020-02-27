@@ -78,11 +78,11 @@
 }
 
 @media screen and (max-width: $breakpoint-desktop) {
-  &__section {
+  .about__section {
     max-width: 750px;
   }
 
-  &__container {
+  .about__container {
     height: 300px;
     width: 300px;
   }

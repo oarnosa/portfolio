@@ -87,25 +87,21 @@
 }
 
 @media screen and (max-width: $breakpoint-tablet) {
-  .home {
-    margin-left: 15px;
+  .home__headline {
+    font-size: 38px;
+    line-height: 1.3;
+    margin: 0 0 25px 0;
+  }
 
-    &__headline {
-      font-size: 38px;
-      line-height: 1.3;
-      margin: 0 0 25px 0;
-    }
-
-    &__sub {
-      display: flex;
-      flex-direction: column;
-      font-size: 30px;
-      line-height: 1.3;
-    }
+  .home__sub {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    line-height: 1.3;
   }
 }
 
-@media screen and (max-width: $breakpoint-tablet) {
+@media screen and (max-width: $breakpoint-mobile) {
   .home {
     margin-left: 0;
   }
