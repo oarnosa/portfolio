@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="./src/assets/logo.svg" height="100" width="100" />
+  <img alt="Logo" src="./src/assets/logo_dark.svg" height="100" width="100" />
 </div>
 <h1 align="center">
   orlandoarnosa.com
