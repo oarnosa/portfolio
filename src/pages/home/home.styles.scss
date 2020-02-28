@@ -51,11 +51,11 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    margin-left: 25px;
+    margin-left: 0;
 
     &__hero {
       width: 100%;
-      max-width: 650px;
+      max-width: 600px;
       margin: 0 0 75px 0;
     }
 
@@ -75,7 +75,7 @@
 
     &__button {
       width: 100%;
-      max-width: 650px;
+      max-width: 600px;
       justify-self: start;
 
       &__text {
@@ -98,11 +98,5 @@
     flex-direction: column;
     font-size: 30px;
     line-height: 1.3;
-  }
-}
-
-@media screen and (max-width: $breakpoint-mobile) {
-  .home {
-    margin-left: 0;
   }
 }
