@@ -86,17 +86,10 @@
       width: 100%;
       max-width: 600px;
       margin: 0;
-      text-align: center;
     }
 
     &__button {
       margin-top: 25px;
     }
-  }
-}
-
-@media screen and (max-width: $breakpoint-mobile) {
-  .projects__heading {
-    text-align: start;
   }
 }

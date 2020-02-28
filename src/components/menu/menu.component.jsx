@@ -28,7 +28,6 @@ const Menu = () => (
       to="contact"
       spy={true}
       smooth={true}
-      offset={-50}
       duration={500}
     >
       <span className="menu__option--special">03.</span> Contact
