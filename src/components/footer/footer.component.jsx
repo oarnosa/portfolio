@@ -6,45 +6,41 @@ import "./footer.styles.scss";
 
 const Footer = () => (
   <div className="footer">
-    <MediaQuery maxWidth={1250}>
+    <MediaQuery maxWidth={950}>
       <div className="footer__icons">
         <FontAwesomeIcon
-          className="footer__icon"
+          className="footer__icons__icon"
           icon={["fab", "github"]}
           size="2x"
           onClick={() => window.open("https://github.com/oarnosa")}
         />
         <FontAwesomeIcon
-          className="footer__icon"
+          className="footer__icons__icon"
           icon={["fab", "linkedin-in"]}
           size="2x"
           onClick={() => window.open("https://www.linkedin.com/in/oarnosa")}
         />
         <FontAwesomeIcon
-          className="footer__icon"
+          className="footer__icons__icon"
           icon={["fab", "instagram"]}
           size="2x"
           onClick={() => window.open("https://instagram.com/arno_lando")}
         />
         <FontAwesomeIcon
-          className="footer__icon"
-          icon={["fas", "list"]}
+          className="footer__icons__icon"
+          icon={["far", "envelope"]}
           size="2x"
-          onClick={() =>
-            window.open(
-              "https://drive.google.com/file/d/1UO2qD8b0FMwuggKP3qBBtU2AsHCNGqKn/view"
-            )
-          }
+          onClick={() => (window.location.href = "mailto:oarnosa@gmail.com")}
         />
       </div>
     </MediaQuery>
     <p className="footer__info">
-      &copy; 2020 Orlando Arnosa. All Rights Reserved.
+      &copy; 2020 Orlando Arnosa. No Rights Reserved.
     </p>
     <p className="footer__info">
       Email:{" "}
       <span
-        className="footer__info--special"
+        className="footer__info__special"
         onClick={() => (window.location.href = "mailto:oarnosa@gmail.com")}
       >
         oarnosa@gmail.com
