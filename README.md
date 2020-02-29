@@ -81,9 +81,3 @@ $ npm start
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
 - Copyright 2020 © <a href="http://orlandoarnosa.com" target="_blank">Orlando Arnosa</a>.
-
----
-
-> [orlandoarnosa.com](https://www.orlandoarnosa.com) &nbsp;&middot;&nbsp; [oarnosa@gmail.com](mailto:oarnosa@gmail.com) &nbsp;&middot;&nbsp;
-> GitHub [@oarnosa](https://github.com/amitmerchant1990) &nbsp;&middot;&nbsp;
-> LinkedIn [/in/oarnosa](https://linkedin.com/in/oarnosa)
