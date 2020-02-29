@@ -1,45 +1,46 @@
 <div align="center">
-  <img alt="Logo" src="./src/assets/logo_dark.svg" height="100" width="100" />
+  <img alt="Logo" src="./src/assets/logo_dark.svg" width="200" />
 </div>
+
 <h1 align="center">
-  Orlando Arnosa<br/>Portfolio
+  Orlando Arnosa Portfolio
 </h1>
-<p align="center">
+
+<h4 align="center">
   The first iteration of <a href="https://orlandoarnosa.com" target="_blank">orlandoarnosa.com</a> built with <a href="https://www.reactjs.org/" target="_blank">React</a> and hosted on <a href="https://www.netlify.com/" target="_blank">Netlify</a>
-</p>
+</h4>
+
 <p align="center">
   <a href="https://app.netlify.com/sites/orlandoarnosa/deploys" target="_blank">
     <img src="https://api.netlify.com/api/v1/badges/0c896372-fcf6-4d1a-a415-ab738db21811/deploy-status" alt="Netlify Status" />
   </a>
 </p>
 
+<p align="center">
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#color-reference">Color Reference</a> •
+  <a href="#license">License</a>
+</p>
+
 ![demo](./public/images/portfolio.jpg)
 
-## Installation & Setup
+## How To Use
 
-1. Clone this repo to your local machine
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
-   ```sh
-   git clone https://github.com/oarnosa/portfolio.git
-   ```
+```bash
+# Clone this repository
+$ git clone https://github.com/oarnosa/portfolio.git
 
-2. Install and use the latest version of Node using [NVM](https://github.com/nvm-sh/nvm)
+# Go into the repository
+$ cd portfolio
 
-   ```sh
-   nvm install
-   ```
+# Install dependencies
+$ npm install
 
-3. Install dependencies
-
-   ```sh
-   yarn
-   ```
-
-4. Start the development server
-
-   ```sh
-   yarn start
-   ```
+# Run the app
+$ npm start
+```
 
 ## Color Reference
 
@@ -75,3 +76,14 @@
     <td>#eff1f5</td>
   </tr>
 </table>
+
+## License
+
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
+- Copyright 2020 © <a href="http://orlandoarnosa.com" target="_blank">Orlando Arnosa</a>.
+
+---
+
+> [orlandoarnosa.com](https://www.orlandoarnosa.com) &nbsp;&middot;&nbsp; [oarnosa@gmail.com](mailto:oarnosa@gmail.com) &nbsp;&middot;&nbsp;
+> GitHub [@oarnosa](https://github.com/amitmerchant1990) &nbsp;&middot;&nbsp;
+> LinkedIn [/in/oarnosa](https://linkedin.com/in/oarnosa)
