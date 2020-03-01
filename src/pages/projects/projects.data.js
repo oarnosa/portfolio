@@ -25,7 +25,7 @@ const PROJECTS_DATA = [
     id: 3,
     title: "CampSite",
     description:
-      "A web app which allows users share and find camping sites around the world.",
+      "A web app which allows users to share and find camping sites around the world.",
     imageUrl: "images/campsite.jpg",
     skills: ["EJS", "Node", "Express", "MongoDB"],
     githubUrl: "https://github.com/oarnosa/campsite",
