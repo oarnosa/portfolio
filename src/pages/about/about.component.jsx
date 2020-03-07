@@ -33,7 +33,7 @@ const AboutPage = () => (
             Here are some technologies I've been working with lately:
           </p>
           <ul className="about__skills">
-            <li className="about__skill">Javascript (ES6+)</li>
+            <li className="about__skill">JavaScript (ES6+)</li>
             <li className="about__skill">HTML & (S)CSS</li>
             <li className="about__skill">React</li>
             <li className="about__skill">GraphQL</li>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
@@ -26,15 +26,27 @@ const Header = () => {
             <Logo />
           </Link>
           <div className="header__options">
-            <Link className="header__option" to="/about">
+            <NavLink
+              className="header__option"
+              to="/about"
+              activeStyle={{ color: "rgba(218, 98, 106, 1)" }}
+            >
               <span className="header__option--special">01.</span>About
-            </Link>
-            <Link className="header__option" to="/projects">
+            </NavLink>
+            <NavLink
+              className="header__option"
+              to="/projects"
+              activeStyle={{ color: "rgba(218, 98, 106, 1)" }}
+            >
               <span className="header__option--special">02.</span>Projects
-            </Link>
-            <Link className="header__option" to="/contact">
+            </NavLink>
+            <NavLink
+              className="header__option"
+              to="/contact"
+              activeStyle={{ color: "rgba(218, 98, 106, 1)" }}
+            >
               <span className="header__option--special">03.</span>Contact
-            </Link>
+            </NavLink>
             <div className="header__button">
               <Button
                 small
