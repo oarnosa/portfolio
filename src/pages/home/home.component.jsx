@@ -1,6 +1,5 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
 import MediaQuery from "react-responsive";
 import TextLoop from "react-text-loop";
 import Fade from "react-reveal/Fade";
@@ -46,17 +45,14 @@ const HomePage = () => {
             <Button onClick={handleOnClick}>Get to Know Me</Button>
           </MediaQuery>
           <MediaQuery maxWidth={950}>
-            <Button>
-              <ScrollLink
-                className="home__button__text"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
-                Get to Know Me
-              </ScrollLink>
+            <Button
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1UO2qD8b0FMwuggKP3qBBtU2AsHCNGqKn/view"
+                )
+              }
+            >
+              View my Resume
             </Button>
           </MediaQuery>
         </div>

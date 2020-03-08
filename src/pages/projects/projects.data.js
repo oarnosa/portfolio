@@ -14,7 +14,7 @@ const PROJECTS_DATA = [
     id: 2,
     title: "Magaya",
     description:
-      "Website redesign for magaya software an end to end software for logistics and supply chain management",
+      "Website redesign for Magaya an end-to-end software for logistics and supply chain management",
     imageUrl: "images/magaya.jpg",
     skills: ["React", "Node.js", "Sass"],
     githubUrl: "https://github.com/oarnosa/magaya",
