@@ -4,7 +4,7 @@ const PROJECTS_DATA = [
     title: "Royal Apparel",
     description:
       "Online e-commerce app where users can shop browse and buy the latest clothes",
-    imageUrl: "images/royal-apparel.jpg",
+    imageUrl: "images/royal-apparel.webp",
     skills: ["React", "Redux", "Node.js", "Stripe", "Firebase"],
     githubUrl: "https://github.com/oarnosa/royal-apparel",
     serverUrl: "",
@@ -15,7 +15,7 @@ const PROJECTS_DATA = [
     title: "Magaya",
     description:
       "Website redesign for Magaya an end-to-end software for logistics and supply chain management",
-    imageUrl: "images/magaya.jpg",
+    imageUrl: "images/magaya.webp",
     skills: ["React", "Node.js", "Sass"],
     githubUrl: "https://github.com/oarnosa/magaya",
     serverUrl: "",
@@ -26,7 +26,7 @@ const PROJECTS_DATA = [
     title: "Chatter",
     description:
       "Real time chat application which allows for communciation between multiple users within chatrooms",
-    imageUrl: "images/chatter.jpg",
+    imageUrl: "images/chatter.webp",
     skills: ["React", "Node.js", "Express", "Socket.io"],
     githubUrl: "https://github.com/oarnosa/chatter",
     serverUrl: "https://oarnosa-chatter-server.herokuapp.com",

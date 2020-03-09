@@ -47,7 +47,7 @@ const AboutPage = () => (
         <div className="about__container">
           <img
             className="about__image"
-            src="images/headshot-square.jpg"
+            src="images/headshot-square.webp"
             alt="headshot"
           />
           <div className="about__decoration"></div>
