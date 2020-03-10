@@ -22,7 +22,7 @@
   <a href="#license">License</a>
 </p>
 
-![demo](./public/images/portfolio.webp)
+![demo](./public/images/portfolio.jpg)
 
 ## How To Use
 
