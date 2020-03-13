@@ -56,11 +56,11 @@ const App = () => (
       <Switch>
         <Suspense fallback={<Spinner />}>
           <div className="wrapper">
-            <Route path="/" exact component={Home} />
+            <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/projects" component={Projects} />
             <Route path="/contact" component={Contact} />
-            <Route render={() => <Redirect to={{ pathname: "/" }} />} />
+            <Redirect to="/" />
           </div>
         </Suspense>
       </Switch>
