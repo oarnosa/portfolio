@@ -27,21 +27,23 @@ const AboutPage = () => (
           </p>
           <p className="about__info">
             When I am not coding, you'll often find me in the gym, with friends
-            and family, or in World of Warcraft where I play as an Orc Shaman.
+            and family, or in World of Warcraft where I play as an Orc Death
+            Knight.
           </p>
           <p className="about__info">
             Here are some technologies I've been working with lately:
           </p>
           <ul className="about__skills">
+            <li className="about__skill">Python</li>
+            <li className="about__skill">Django / Flask</li>
             <li className="about__skill">JavaScript (ES6+)</li>
             <li className="about__skill">HTML & (S)CSS</li>
             <li className="about__skill">React</li>
-            <li className="about__skill">GraphQL</li>
             <li className="about__skill">Redux</li>
-            <li className="about__skill">PostgreSQL</li>
             <li className="about__skill">Node.js</li>
-            <li className="about__skill">MongoDB</li>
             <li className="about__skill">Express</li>
+            <li className="about__skill">MongoDB</li>
+            <li className="about__skill">PostgreSQL</li>
           </ul>
         </div>
         <div className="about__container">
