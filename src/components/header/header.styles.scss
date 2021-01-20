@@ -30,6 +30,7 @@
     margin: 0 15px;
     font-family: $font-secondary;
     transition: ease-in-out 0.25s;
+    color: rgba($color-primary, 0.75);
 
     &--special {
       @include accent;
@@ -37,7 +38,7 @@
     }
 
     &:hover {
-      color: $color-secondary;
+      color: $color-primary;
     }
   }
 

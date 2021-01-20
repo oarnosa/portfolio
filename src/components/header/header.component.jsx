@@ -29,21 +29,21 @@ const Header = () => {
             <NavLink
               className="header__option"
               to="/about"
-              activeStyle={{ color: "rgba(218, 98, 106, 1)" }}
+              activeStyle={{ color: "rgba(239, 241, 245, 1)" }}
             >
               <span className="header__option--special">01.</span>About
             </NavLink>
             <NavLink
               className="header__option"
               to="/projects"
-              activeStyle={{ color: "rgba(218, 98, 106, 1)" }}
+              activeStyle={{ color: "rgba(239, 241, 245, 1)" }}
             >
               <span className="header__option--special">02.</span>Projects
             </NavLink>
             <NavLink
               className="header__option"
               to="/contact"
-              activeStyle={{ color: "rgba(218, 98, 106, 1)" }}
+              activeStyle={{ color: "rgba(239, 241, 245, 1)" }}
             >
               <span className="header__option--special">03.</span>Contact
             </NavLink>
