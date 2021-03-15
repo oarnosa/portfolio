@@ -31,7 +31,7 @@ const HomePage = () => {
                   "back-end developer",
                   "software engineer",
                   "minimalist",
-                  "gamer"
+                  "gamer",
                 ]}
                 springConfig={{ stiffness: 250, damping: 15 }}
                 mask
@@ -48,7 +48,7 @@ const HomePage = () => {
             <Button
               onClick={() =>
                 window.open(
-                  "https://drive.google.com/file/d/1UO2qD8b0FMwuggKP3qBBtU2AsHCNGqKn/view"
+                  "https://drive.google.com/file/d/1m_F2iXHcuSLaEK966-IGIznx7N5u9fKp/view"
                 )
               }
             >
