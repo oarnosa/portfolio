@@ -12,10 +12,10 @@ import Menu from "../menu/menu.component";
 import "./header.styles.scss";
 
 const Header = () => {
-  const [show, setShow] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const toggleMenu = () => {
-    setShow(!show);
+    setOpen(!open);
   };
 
   return (
@@ -81,8 +81,8 @@ const Header = () => {
         </MediaQuery>
       </div>
       <MediaQuery maxWidth={950}>
-        <Slide top when={show}>
-          <Menu />
+        <Slide top when={open}>
+          <Menu setOpen={setOpen} />
         </Slide>
       </MediaQuery>
     </div>
