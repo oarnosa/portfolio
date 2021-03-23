@@ -12,12 +12,16 @@ const Card = ({ project }) => {
     imageUrl,
     githubUrl,
     serverUrl,
-    previewUrl
+    previewUrl,
   } = project;
 
   return (
     <Fade>
-      <div className="card" style={{ backgroundImage: `url(${imageUrl})` }}>
+      <div
+        className="card"
+        style={{ backgroundImage: `url(${imageUrl})` }}
+        onClick={() => window.open(`${previewUrl}`)}
+      >
         <div className="card__overlay"></div>
         <div className="card__content">
           <h3

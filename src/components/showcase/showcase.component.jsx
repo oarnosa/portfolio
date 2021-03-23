@@ -12,14 +12,19 @@ const Showcase = ({ project }) => {
     skills,
     githubUrl,
     serverUrl,
-    previewUrl
+    previewUrl,
   } = project;
 
   return (
     <div className="showcase">
       <Fade>
         <div className="showcase__container">
-          <img className="showcase__image" src={imageUrl} alt="" />
+          <img
+            className="showcase__image"
+            src={imageUrl}
+            alt=""
+            onClick={() => window.open(`${previewUrl}`)}
+          />
         </div>
         <div className="showcase__content">
           <h3
