@@ -34,7 +34,7 @@ const Footer = () => (
         />
       </div>
     </MediaQuery>
-    <p className="footer__info">&copy; 2021 Orlando Arnosa</p>
+    <p className="footer__info">&copy; 2021 Orlando Arnosa. Rights Reserved.</p>
     <p className="footer__info">
       Email:{" "}
       <span
