@@ -27,8 +27,7 @@ const AboutPage = () => (
           </p>
           <p className="about__info">
             When I am not coding, you'll often find me in the gym, with friends
-            and family, or in World of Warcraft where I play as an Orc Death
-            Knight.
+            and family, or in World of Warcraft where I play as an Orc Shaman.
           </p>
           <p className="about__info">
             Here are some technologies I've been working with lately:
