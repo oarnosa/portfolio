@@ -47,33 +47,27 @@ $ npm start
 <table style="width:100%">
   <tr>
     <th>Color</th>
-    <th>RGB</th>
     <th>HEX</th>
   </tr>
   <tr align=center>
     <td>Navy</td>
-    <td>rgb(24, 28, 39)</td>
-    <td>#181c27</td>
+    <td>#112240</td>
   </tr>
   <tr align=center>
     <td>Dark Navy</td>
-    <td>rgb(17, 21, 32)</td>
-    <td>#111520</td>
+    <td>#0a192f</td>
   </tr>
   <tr align=center>
-    <td>Dark Grey</td>
-    <td>rgb(37, 45, 56)</td>
-    <td>#252d38</td>
+    <td>Darkest Navy</td>
+    <td>#020c1b</td>
   </tr>
     <tr align=center>
-    <td>Red</td>
-    <td>rgb(218, 98, 106)</td>
-    <td>#da626a</td>
+    <td>Green</td>
+    <td>#64ffda</td>
   </tr>
     <tr align=center>
     <td>White</td>
-    <td>rgb(239, 241, 245)</td>
-    <td>#eff1f5</td>
+    <td>#e6f1ff</td>
   </tr>
 </table>
 
