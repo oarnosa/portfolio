@@ -80,5 +80,4 @@ $ npm start
 ## License
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2021 © <a href="http://orlandoarnosa.com" target="_blank">Orlando Arnosa</a>.
 - The design for this project was heavily inspired by the works of [Brittany Chiang](https://brittanychiang.com/) and her amazing work.
