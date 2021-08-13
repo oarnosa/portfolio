@@ -35,16 +35,16 @@ const AboutPage = () => (
           <ul className="about__skills">
             <li className="about__skill">TypeScript</li>
             <li className="about__skill">JavaScript (ES6+)</li>
-            <li className="about__skill">Python</li>
-            <li className="about__skill">Django / Flask</li>
-            <li className="about__skill">PHP</li>
-            <li className="about__skill">Wordpress</li>
             <li className="about__skill">Next.js</li>
             <li className="about__skill">HTML & (S)CSS</li>
             <li className="about__skill">React</li>
             <li className="about__skill">Tailwind CSS</li>
             <li className="about__skill">Node.js</li>
             <li className="about__skill">Express</li>
+            <li className="about__skill">Python</li>
+            <li className="about__skill">Django / Flask</li>
+            <li className="about__skill">PHP</li>
+            <li className="about__skill">Wordpress</li>
             <li className="about__skill">SQL</li>
             <li className="about__skill">MongoDB</li>
           </ul>
