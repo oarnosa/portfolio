@@ -33,16 +33,20 @@ const AboutPage = () => (
             Here are some technologies I've been working with lately:
           </p>
           <ul className="about__skills">
+            <li className="about__skill">TypeScript</li>
+            <li className="about__skill">JavaScript (ES6+)</li>
             <li className="about__skill">Python</li>
             <li className="about__skill">Django / Flask</li>
-            <li className="about__skill">JavaScript (ES6+)</li>
+            <li className="about__skill">PHP</li>
+            <li className="about__skill">Wordpress</li>
+            <li className="about__skill">Next.js</li>
             <li className="about__skill">HTML & (S)CSS</li>
             <li className="about__skill">React</li>
-            <li className="about__skill">Redux</li>
+            <li className="about__skill">Tailwind CSS</li>
             <li className="about__skill">Node.js</li>
             <li className="about__skill">Express</li>
+            <li className="about__skill">SQL</li>
             <li className="about__skill">MongoDB</li>
-            <li className="about__skill">PostgreSQL</li>
           </ul>
         </div>
         <div className="about__container">

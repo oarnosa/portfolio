@@ -19,7 +19,7 @@ const PROJECTS_DATA = [
     skills: ["React", "Node", "Sass", "Animate", "Netlify"],
     githubUrl: "https://github.com/oarnosa/magaya",
     serverUrl: "",
-    previewUrl: "https://oarnosa-magaya.netlify.com/",
+    previewUrl: "https://oarnosa-magaya.netlify.app/",
   },
   {
     id: 3,
@@ -27,10 +27,10 @@ const PROJECTS_DATA = [
     description:
       "Online e-commerce app where users can shop browse and buy the latest clothes",
     imageUrl: "images/royal-apparel.jpg",
-    skills: ["React", "Redux", "Node", "Stripe API", "Firebase", "Heroku"],
+    skills: ["React", "Redux", "Node", "Stripe", "Firebase", "Netlify"],
     githubUrl: "https://github.com/oarnosa/royal-apparel",
     serverUrl: "",
-    previewUrl: "https://oarnosa-royal-apparel.herokuapp.com",
+    previewUrl: "https://oarnosa-royal-apparel.netlify.app/",
   },
 ];
 

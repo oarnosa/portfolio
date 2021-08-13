@@ -86,7 +86,7 @@ const ProjectsPage = () => {
         <div className="projects__button">
           <Button
             onClick={() =>
-              window.open("https://github.com/oarnosa?tab=repositories")
+              window.open("https://github.com/oarnosa")
             }
           >
             View More
