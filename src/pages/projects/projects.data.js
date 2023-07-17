@@ -19,7 +19,7 @@ const PROJECTS_DATA = [
     skills: ["React", "Node", "Sass", "Animate", "Netlify"],
     githubUrl: "https://github.com/oarnosa/magaya",
     serverUrl: "",
-    previewUrl: "https://oarnosa-magaya.netlify.app/",
+    previewUrl: "https://magaya.netlify.app/",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const PROJECTS_DATA = [
     skills: ["React", "Redux", "Node", "Stripe", "Firebase", "Netlify"],
     githubUrl: "https://github.com/oarnosa/royal-apparel",
     serverUrl: "",
-    previewUrl: "https://oarnosa-royal-apparel.netlify.app/",
+    previewUrl: "https://royal-apparel.netlify.app/",
   },
 ];
 
