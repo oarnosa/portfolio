@@ -1,11 +1,11 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 
-import Slide from "react-reveal/Slide";
 import MediaQuery from "react-responsive";
+import Slide from "react-reveal/Slide";
 import Button from "../button/button.component";
 import Menu from "../menu/menu.component";
 
@@ -52,7 +52,7 @@ const Header = () => {
                 small
                 onClick={() =>
                   window.open(
-                    "https://drive.google.com/file/d/1m_F2iXHcuSLaEK966-IGIznx7N5u9fKp/view"
+                    "https://drive.google.com/file/d/19dssEkcMiJIhofV1j9YZeBai7eqU23Bo/view"
                   )
                 }
               >

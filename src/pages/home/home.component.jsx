@@ -1,8 +1,8 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
 import MediaQuery from "react-responsive";
-import TextLoop from "react-text-loop";
 import Fade from "react-reveal/Fade";
+import { useHistory } from "react-router-dom";
+import TextLoop from "react-text-loop";
 
 import Button from "../../components/button/button.component";
 
@@ -48,7 +48,7 @@ const HomePage = () => {
             <Button
               onClick={() =>
                 window.open(
-                  "https://drive.google.com/file/d/1m_F2iXHcuSLaEK966-IGIznx7N5u9fKp/view"
+                  "https://drive.google.com/file/d/19dssEkcMiJIhofV1j9YZeBai7eqU23Bo/view"
                 )
               }
             >
