@@ -30,8 +30,8 @@ const HomePage = () => {
                   "front-end developer",
                   "back-end developer",
                   "software engineer",
-                  "minimalist",
-                  "gamer",
+                  "girl dad",
+                  "gamer"
                 ]}
                 springConfig={{ stiffness: 250, damping: 15 }}
                 mask

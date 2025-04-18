@@ -1,5 +1,5 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
 
 import "./social.styles.scss";
 
@@ -22,15 +22,6 @@ const Social = () => (
         onClick={() => window.open("https://www.linkedin.com/in/oarnosa")}
       />
       <p className="social__url">/in/oarnosa/</p>
-    </div>
-    <div className="social__content">
-      <FontAwesomeIcon
-        className="social__icon"
-        icon={["fab", "instagram"]}
-        size="lg"
-        onClick={() => window.open("https://instagram.com/arno_lando")}
-      />
-      <p className="social__url">@arno_lando</p>
     </div>
     <div className="social__content">
       <FontAwesomeIcon

@@ -1,32 +1,31 @@
 import React, { lazy, Suspense } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Redirect
-} from "react-router-dom";
 import MediaQuery from "react-responsive";
+import {
+  Redirect,
+  Route,
+  BrowserRouter as Router,
+  Switch
+} from "react-router-dom";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faGithub,
   faLinkedinIn,
-  faInstagram
 } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import {
-  faServer,
-  faExternalLinkAlt,
+  faBars,
   faChevronLeft,
   faChevronRight,
-  faBars,
-  faList
+  faExternalLinkAlt,
+  faList,
+  faServer
 } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
+import Footer from "./components/footer/footer.component";
 import Header from "./components/header/header.component";
 import Social from "./components/social/social.component";
 import Spinner from "./components/spinner/spinner.component";
-import Footer from "./components/footer/footer.component";
 
 import "./App.scss";
 
@@ -38,7 +37,6 @@ const Contact = lazy(() => import("./pages/contact/contact.component"));
 library.add(
   faGithub,
   faLinkedinIn,
-  faInstagram,
   faServer,
   faExternalLinkAlt,
   faChevronLeft,

@@ -1,6 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import MediaQuery from "react-responsive";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./footer.styles.scss";
 
@@ -22,19 +22,13 @@ const Footer = () => (
         />
         <FontAwesomeIcon
           className="footer__icon"
-          icon={["fab", "instagram"]}
-          size="2x"
-          onClick={() => window.open("https://instagram.com/arno_lando")}
-        />
-        <FontAwesomeIcon
-          className="footer__icon"
           icon={["far", "envelope"]}
           size="2x"
           onClick={() => (window.location.href = "mailto:oarnosa@gmail.com")}
         />
       </div>
     </MediaQuery>
-    <p className="footer__info">&copy; 2021 Orlando Arnosa. Rights Reserved.</p>
+    <p className="footer__info">&copy; 2025 Orlando Arnosa. Rights Reserved.</p>
     <p className="footer__info">
       Email:{" "}
       <span
