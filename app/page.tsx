@@ -4,7 +4,7 @@ import { SocialLinks } from "@/components/social-links";
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <div className="mx-auto max-w-[50rem] px-6 pb-16 pt-24 sm:pt-28">
+      <div className="mx-auto max-w-[50rem] px-6 pb-16 pt-12 sm:pt-28">
         <header className="space-y-6">
           <h1 className="animate-reveal text-[2rem] font-semibold leading-10 tracking-tight">
             Hey, I&apos;m Orlando.
