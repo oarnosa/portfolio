@@ -13,7 +13,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     platform: "resume",
-    href: "https://drive.google.com/file/d/1CUVP3alYcbAxBo-Nygbiw9V-0ZRFI5ES/view",
+    href: "https://drive.google.com/file/d/1TbQb5TDSBz6BsHAOo8tUToIENgN7dk-v/view?usp=sharing",
     label: "Resume",
   },
   {
