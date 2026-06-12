@@ -1,12 +1,12 @@
 import type React from "react";
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Source_Serif_4, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
-const geist = Geist({
+const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
-  variable: "--font-geist-sans",
+  variable: "--font-source-serif",
   display: "swap",
 });
 
@@ -86,7 +86,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geist.variable} ${geistMono.variable} font-sans antialiased`}
+        className={`${sourceSerif.variable} ${geistMono.variable} font-sans antialiased`}
       >
         {children}
         <Analytics />
