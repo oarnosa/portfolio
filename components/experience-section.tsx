@@ -1,4 +1,4 @@
-import { experiences } from "@/lib/data";
+import { experiences, resumeLink } from "@/lib/data";
 import type { Experience } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { SectionHeading } from "@/components/section-heading";
@@ -21,11 +21,30 @@ function RoleMeta({ exp, className }: { exp: Experience; className?: string }) {
 
 export function ExperienceSection() {
   return (
-    <section className="pt-8 pb-12">
-      <SectionHeading
-        title="Experience"
-        className="animate-reveal [animation-delay:240ms]"
-      />
+    <section className="pt-8 pb-10">
+      <div className="animate-reveal mb-8 flex items-baseline justify-between [animation-delay:240ms]">
+        <SectionHeading title="Experience" />
+        <a
+          href={resumeLink.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group link-draw inline-flex items-center gap-1 text-base font-medium text-accent"
+        >
+          Full resume
+          <svg
+            aria-hidden
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+          >
+            <path d="M7 17 17 7M7 7h10v10" />
+          </svg>
+        </a>
+      </div>
 
       <div>
         {experiences.map((exp, i) => {

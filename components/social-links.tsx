@@ -17,7 +17,7 @@ export function SocialLinks({ className }: SocialLinksProps) {
             key={link.platform}
             href={link.href}
             {...(isMail ? {} : { target: "_blank", rel: "noopener noreferrer" })}
-            className="text-base font-medium text-accent underline decoration-transparent underline-offset-4 transition-colors hover:decoration-accent/60"
+            className="link-draw text-base font-medium text-accent"
             aria-label={link.label}
           >
             {link.label}

@@ -12,16 +12,17 @@ export const socialLinks: SocialLink[] = [
     label: "GitHub",
   },
   {
-    platform: "resume",
-    href: "https://drive.google.com/file/d/1TbQb5TDSBz6BsHAOo8tUToIENgN7dk-v/view?usp=sharing",
-    label: "Resume",
-  },
-  {
     platform: "email",
     href: "mailto:oarnosa@gmail.com",
     label: "Email",
   },
 ];
+
+export const resumeLink: SocialLink = {
+  platform: "resume",
+  href: "https://drive.google.com/file/d/1TbQb5TDSBz6BsHAOo8tUToIENgN7dk-v/view?usp=sharing",
+  label: "Resume",
+};
 
 export const experiences: Experience[] = [
   {

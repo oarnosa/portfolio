@@ -36,14 +36,14 @@ export default function Home() {
             tips.{" "}
             <a
               href="mailto:oarnosa@gmail.com"
-              className="font-medium text-accent underline decoration-transparent underline-offset-4 transition-colors hover:decoration-accent/60"
+              className="link-draw font-medium text-accent"
             >
               Say hi
             </a>
             .
           </p>
 
-          <footer className="animate-reveal mt-16 flex items-center justify-between border-t border-border pt-6 font-mono text-xs text-muted-foreground/80 [animation-delay:640ms]">
+          <footer className="animate-reveal mt-12 flex items-center justify-between border-t border-border pt-6 font-mono text-xs text-muted-foreground/80 [animation-delay:640ms]">
             <span>© 2026 Orlando Arnosa</span>
             <span>Miami, FL</span>
           </footer>

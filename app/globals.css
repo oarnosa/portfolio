@@ -33,13 +33,13 @@
       box-shadow:
         0 0 0 2px var(--color-background),
         0 0 0 3px --alpha(var(--color-accent) / 35%),
-        0 0 0 3px --alpha(var(--color-accent) / 30%);
+        0 0 0 3px --alpha(var(--color-accent) / 40%);
     }
     70% {
       box-shadow:
         0 0 0 2px var(--color-background),
         0 0 0 3px --alpha(var(--color-accent) / 35%),
-        0 0 0 8px --alpha(var(--color-accent) / 0%);
+        0 0 0 10px --alpha(var(--color-accent) / 0%);
     }
     100% {
       box-shadow:
@@ -70,6 +70,23 @@
       overflow-x: hidden;
     }
   }
+}
+
+/* Underline that draws in from the left on hover; text-decoration
+   can't animate direction, so the line is a sized background gradient */
+.link-draw {
+  background-image: linear-gradient(
+    color-mix(in srgb, currentColor 60%, transparent),
+    color-mix(in srgb, currentColor 60%, transparent)
+  );
+  background-size: 0% 1.5px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size 300ms ease;
+}
+
+.link-draw:hover {
+  background-size: 100% 1.5px;
 }
 
 ::selection {
