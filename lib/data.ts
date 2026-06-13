@@ -20,7 +20,7 @@ export const socialLinks: SocialLink[] = [
 
 export const resumeLink: SocialLink = {
   platform: "resume",
-  href: "https://drive.google.com/file/d/1TbQb5TDSBz6BsHAOo8tUToIENgN7dk-v/view?usp=sharing",
+  href: "/orlando-arnosa-resume.pdf",
   label: "Resume",
 };
 
