@@ -31,7 +31,7 @@ export const experiences: Experience[] = [
     title: "Senior Full Stack Developer",
     company: "Artivo Surfaces",
     description:
-      "Three ERPs, 18+ storefronts, and the C#/.NET middleware keeping a 225K-SKU catalog in sync.",
+      "Three ERPs, 18+ storefronts, and the C#/.NET middleware keeping a 225K+ SKU catalog in sync.",
   },
   {
     period: "2026–present",
